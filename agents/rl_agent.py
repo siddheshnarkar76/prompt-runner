@@ -3,11 +3,34 @@ import logging
 from datetime import datetime
 import json
 import os
-from agents.agent_clients import send_feedback
+from typing import List, Dict
+
+from agents.agent_clients import send_feedback, list_feedback_entries
 
 logging.basicConfig(level=logging.INFO)
 TRAIN_LOG = "rl_training_logs.json"
 os.makedirs(os.path.dirname(TRAIN_LOG) or ".", exist_ok=True)
+
+def _calculate_confidence(feedback_history: List[Dict]) -> float:
+    """
+    Calculate a confidence score based on persisted feedback history.
+
+    Returns a score between -1.0 and 1.0 where positive numbers indicate
+    more positive feedback and negative numbers indicate more negative
+    feedback.
+    """
+    if not feedback_history:
+        return 0.0
+
+    score = 0
+    for entry in feedback_history:
+        fb = entry.get("feedback") or entry.get("user_feedback")
+        if fb == "up":
+            score += 1
+        elif fb == "down":
+            score -= 1
+    return round(score / len(feedback_history), 2)
+
 
 def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = None) -> int:
     """
@@ -23,13 +46,18 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
         logging.error("Failed to send feedback to MCP for %s", case_id)
         return None
 
-    # Persist local training record for later offline RL training
+    persisted_history = list_feedback_entries(case_id)
+    confidence_score = _calculate_confidence(persisted_history)
+
+    # Persist local training record for offline RL training
     record = {
         "case_id": case_id,
         "feedback": user_feedback,
         "reward": reward,
         "meta": metadata,
-        "timestamp": datetime.utcnow().isoformat()+"Z"
+        "timestamp": datetime.utcnow().isoformat()+"Z",
+        "confidence_score": confidence_score,
+        "history_size": len(persisted_history)
     }
 
     # append to local training log

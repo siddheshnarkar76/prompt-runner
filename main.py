@@ -1,11 +1,13 @@
 #main.py
-import streamlit as st
 import json
-import uuid
+import logging
 import os
+import time
+import uuid
+
 import pandas as pd
 import requests
-import time
+import streamlit as st
 
 from components.ui import prompt_input, log_viewer, action_buttons
 from components.glb_viewer import render_glb_viewer, show_geometry_gallery
@@ -14,6 +16,10 @@ from agents.design_agent import prompt_to_spec
 from agents.calculator_agent import calculator_agent
 from utils.geometry_converter import json_to_glb, create_building_geometry
 from utils import mcp_store
+from core_bridge import sync_run_log
+from agents.agent_clients import upload_parsed_pdf
+
+logger = logging.getLogger("prompt_runner")
 
 st.set_page_config(page_title="Prompt Runner", layout="wide")
 st.title("📝 Streamlit Prompt Runner")
@@ -28,6 +34,22 @@ if st.button("Submit", key="submit_main"):
         spec_data = prompt_to_spec(user_prompt)
         spec_filename = save_spec(spec_data)
         save_prompt(user_prompt, spec_filename)
+        case_id = os.path.splitext(spec_filename)[0]
+
+        try:
+            upload_parsed_pdf(case_id, spec_data)
+        except Exception as exc:
+            logger.warning("Failed to upload spec %s to MCP: %s", case_id, exc)
+        
+        # Log to Core
+        sync_run_log({
+            "case_id": case_id,
+            "event": "prompt_submitted",
+            "prompt": user_prompt,
+            "output": spec_data,
+            "spec_filename": spec_filename
+        })
+        
         st.success("Prompt processed successfully!")
     else:
         st.error("Please enter a prompt.")
@@ -58,6 +80,15 @@ if json_spec and case_id:
             r = requests.post(feedback_api, json=feedback_input, timeout=5)
             if r.status_code in [200, 201]:
                 st.success(f"Feedback saved! Reward +2 | {r.json()}")
+                
+                # Log to Core
+                sync_run_log({
+                    "case_id": case_id,
+                    "event": "feedback",
+                    "feedback": "up",
+                    "prompt": user_prompt if user_prompt else None,
+                    "output": json_spec if json_spec else None
+                })
             else:
                 st.error(f"Failed to save feedback: {r.status_code}")
         except requests.exceptions.ConnectionError:
@@ -74,6 +105,15 @@ if json_spec and case_id:
             r = requests.post(feedback_api, json=feedback_input, timeout=5)
             if r.status_code in [200, 201]:
                 st.error(f"Feedback saved! Reward -2 | {r.json()}")
+                
+                # Log to Core
+                sync_run_log({
+                    "case_id": case_id,
+                    "event": "feedback",
+                    "feedback": "down",
+                    "prompt": user_prompt if user_prompt else None,
+                    "output": json_spec if json_spec else None
+                })
             else:
                 st.error(f"Failed to save feedback: {r.status_code}")
         except requests.exceptions.ConnectionError:
@@ -113,6 +153,18 @@ with comp_col2:
                 }
                 
                 results = calculator_agent(selected_city, subject)
+                
+                # Log compliance check to Core
+                sync_run_log({
+                    "case_id": f"compliance_{selected_city}_{int(time.time())}",
+                    "event": "compliance_check",
+                    "city": selected_city,
+                    "subject": subject,
+                    "output": {
+                        "rule_count": len(results),
+                        "results": results
+                    }
+                })
                 
                 st.success(f"✅ Found {len(results)} applicable rules")
                 

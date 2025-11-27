@@ -1,0 +1,82 @@
+[
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:01:50.834623Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:01:52.037267Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:01:53.267001Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:02:20.232019Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:03:15.498413Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:01:26.886813Z",
+    "last_case_id": "pune_test_1764140484",
+    "checked_at": "2025-11-26T07:08:07.546061Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:09:53.957126Z",
+    "last_case_id": "pune_test_1764140991",
+    "checked_at": "2025-11-26T07:11:09.979890Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:09:53.957126Z",
+    "last_case_id": "pune_test_1764140991",
+    "checked_at": "2025-11-26T07:11:11.314645Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:09:53.957126Z",
+    "last_case_id": "pune_test_1764140991",
+    "checked_at": "2025-11-26T07:11:12.488548Z"
+  },
+  {
+    "status": "active",
+    "core_sync": true,
+    "feedback_store": true,
+    "last_run": "2025-11-26T07:09:53.957126Z",
+    "last_case_id": "pune_test_1764140991",
+    "checked_at": "2025-11-26T07:11:24.214015Z"
+  }
+]

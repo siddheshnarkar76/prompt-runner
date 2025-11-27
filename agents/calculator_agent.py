@@ -2,7 +2,11 @@
 import logging
 import re
 from typing import List, Dict, Any
-from agents.agent_clients import get_rules_for_city, log_geometry
+from agents.agent_clients import (
+    get_rules_for_city,
+    log_geometry,
+    save_output_summary,
+)
 from utils.geometry_converter import json_to_glb
 import os
 import json
@@ -80,23 +84,34 @@ def calculator_agent(city: str, subject: Dict[str, Any]) -> List[Dict[str,Any]]:
             "status": "compliant" if all(c.get("ok") for c in outcome["checks"].values() if c.get("ok") is not None) else "non-compliant"
         }
         
-        # Generate GLB using improved converter
+        geom_path = None
         try:
             geom_path = json_to_glb(
-                json_path=f"{case_id}.json",  # Just for naming
+                json_path=f"{case_id}.json",  # Naming hint only
                 output_dir="outputs/geometry",
-                spec_data=geometry_spec
+                spec_data=geometry_spec,
             )
-            log_geometry(case_id, geom_path)
-            logging.info(f"✅ Generated 3D geometry for {case_id}: {geom_path}")
+            log_geometry(
+                case_id,
+                geom_path,
+                metadata={"city": city, "source": "calculator_agent"},
+                include_file_blob=True,
+            )
+            logging.info("✅ Generated 3D geometry for %s: %s", case_id, geom_path)
         except Exception as e:
-            logging.error(f"Failed to generate geometry for {case_id}: {e}")
+            logging.error("Failed to generate geometry for %s: %s", case_id, e)
+        finally:
+            if geom_path and os.path.exists(geom_path):
+                try:
+                    os.remove(geom_path)
+                except OSError:
+                    logging.debug("Could not remove temp geometry %s", geom_path)
 
-    # also write a local output summary
-    summary_path = f"outputs/{city}_calc_{datetime.utcnow().strftime('%Y%m%d%H%M%S')}.json"
-    os.makedirs(os.path.dirname(summary_path), exist_ok=True)
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(outputs, f, indent=2)
+    summary_case_id = f"{city}_calc_{datetime.utcnow().strftime('%Y%m%d%H%M%S')}"
+    try:
+        save_output_summary(city, outputs, case_id=summary_case_id)
+    except Exception as exc:
+        logging.warning("Failed to persist output summary for %s: %s", city, exc)
 
     logging.info("Calculator finished for %s -> %d outcomes", city, len(outputs))
     return outputs

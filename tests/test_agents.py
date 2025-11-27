@@ -39,9 +39,10 @@ class TestCalculatorAgent:
         assert _evaluate_height_condition({}, 20.0) is False
     
     @patch('agents.calculator_agent.get_rules_for_city')
+    @patch('agents.calculator_agent.save_output_summary')
     @patch('agents.calculator_agent.log_geometry')
     @patch('agents.calculator_agent.json_to_glb')
-    def test_calculator_agent_compliant_case(self, mock_glb, mock_log, mock_get_rules, sample_subject):
+    def test_calculator_agent_compliant_case(self, mock_glb, mock_log, mock_save_summary, mock_get_rules, sample_subject):
         """Test calculator agent with compliant case"""
         mock_get_rules.return_value = [
             {
@@ -64,11 +65,13 @@ class TestCalculatorAgent:
         assert results[0]["checks"]["height"]["ok"] is True
         mock_glb.assert_called_once()
         mock_log.assert_called_once()
+        mock_save_summary.assert_called_once()
     
     @patch('agents.calculator_agent.get_rules_for_city')
+    @patch('agents.calculator_agent.save_output_summary')
     @patch('agents.calculator_agent.log_geometry')
     @patch('agents.calculator_agent.json_to_glb')
-    def test_calculator_agent_non_compliant_case(self, mock_glb, mock_log, mock_get_rules):
+    def test_calculator_agent_non_compliant_case(self, mock_glb, mock_log, mock_save_summary, mock_get_rules):
         """Test calculator agent with non-compliant case"""
         mock_get_rules.return_value = [
             {
@@ -88,6 +91,7 @@ class TestCalculatorAgent:
         
         assert len(results) == 1
         assert results[0]["checks"]["height"]["ok"] is False
+        mock_save_summary.assert_called_once()
 
 
 class TestRLAgent:

@@ -1,0 +1,2354 @@
+[
+  {
+    "case_id": "mumbai_test_1764140259",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "height_m": 24.0,
+      "width_m": 30.0,
+      "depth_m": 20.0,
+      "setback_m": 3.0,
+      "fsi": 2.0,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 0,
+      "results": []
+    }
+  },
+  {
+    "case_id": "mumbai_test_1764140259",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "height_m": 24.0,
+      "width_m": 30.0,
+      "depth_m": 20.0,
+      "setback_m": 3.0,
+      "fsi": 2.0,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 0,
+      "results": []
+    },
+    "timestamp": "2025-11-26T06:57:39.062063Z"
+  },
+  {
+    "case_id": "pune_test_1764140281",
+    "event": "compliance_check",
+    "city": "Pune",
+    "subject": {
+      "height_m": 21.0,
+      "width_m": 25.0,
+      "depth_m": 18.0,
+      "setback_m": 4.0,
+      "fsi": 1.8,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 0,
+      "results": []
+    }
+  },
+  {
+    "case_id": "pune_test_1764140281",
+    "event": "compliance_check",
+    "city": "Pune",
+    "subject": {
+      "height_m": 21.0,
+      "width_m": 25.0,
+      "depth_m": 18.0,
+      "setback_m": 4.0,
+      "fsi": 1.8,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 0,
+      "results": []
+    },
+    "timestamp": "2025-11-26T06:58:01.435681Z"
+  },
+  {
+    "case_id": "mumbai_test_1764140480",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "height_m": 24.0,
+      "width_m": 30.0,
+      "depth_m": 20.0,
+      "setback_m": 3.0,
+      "fsi": 2.0,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 43,
+      "results": [
+        {
+          "id": "90d547ee",
+          "clause_no": null,
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-14.5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "pune_test_1764140484",
+    "event": "compliance_check",
+    "city": "Pune",
+    "subject": {
+      "height_m": 21.0,
+      "width_m": 25.0,
+      "depth_m": 18.0,
+      "setback_m": 4.0,
+      "fsi": 1.8,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 4,
+      "results": [
+        {
+          "id": null,
+          "clause_no": "PMC DCR-7.1",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-7.2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-8.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-9.1",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "mumbai_test_1764140988",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "height_m": 24.0,
+      "width_m": 30.0,
+      "depth_m": 20.0,
+      "setback_m": 3.0,
+      "fsi": 2.0,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 43,
+      "results": [
+        {
+          "id": "90d547ee",
+          "clause_no": null,
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-14.5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 24.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "pune_test_1764140991",
+    "event": "compliance_check",
+    "city": "Pune",
+    "subject": {
+      "height_m": 21.0,
+      "width_m": 25.0,
+      "depth_m": 18.0,
+      "setback_m": 4.0,
+      "fsi": 1.8,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 4,
+      "results": [
+        {
+          "id": null,
+          "clause_no": "PMC DCR-7.1",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-7.2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-8.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "PMC DCR-9.1",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 1.8
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "compliance_Mumbai_1764228824",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "height_m": 21.0,
+      "width_m": 30.0,
+      "depth_m": 20.0,
+      "setback_m": 3.0,
+      "fsi": 2.0,
+      "type": "residential"
+    },
+    "output": {
+      "rule_count": 43,
+      "results": [
+        {
+          "id": "90d547ee",
+          "clause_no": null,
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "116",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "22",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "6",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "12",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "19",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "1.16",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "14",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "201",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "2",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "29",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-14.5",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        },
+        {
+          "id": null,
+          "clause_no": "DCPR 2034-12.3",
+          "checks": {
+            "height": {
+              "ok": null,
+              "rule": null,
+              "subject": 21.0
+            },
+            "fsi": {
+              "ok": null,
+              "rule": null,
+              "subject": 2.0
+            }
+          }
+        }
+      ]
+    }
+  }
+]

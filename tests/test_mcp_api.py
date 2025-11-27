@@ -4,7 +4,15 @@ Tests for MCP API endpoints
 """
 import pytest
 import requests
-from agents.agent_clients import save_rule, list_rules, get_rules_for_city, send_feedback, log_geometry
+from agents.agent_clients import (
+    save_rule,
+    list_rules,
+    get_rules_for_city,
+    send_feedback,
+    log_geometry,
+    save_output_summary,
+    list_output_summaries,
+)
 
 
 class TestMCPConnectivity:
@@ -125,3 +133,18 @@ class TestGeometryAPI:
             pytest.skip("MCP server not available")
         
         assert result.get("success") == True
+
+    def test_save_output_summary(self):
+        """Ensure JSON output summaries can be stored."""
+        result = save_output_summary(
+            "TestCity",
+            [{"clause_no": "1.1", "checks": {"height": {"ok": True}}}],
+            "outputs/TestCity_calc_summary.json",
+            case_id="TestCity_calc_summary",
+        )
+        if result is None:
+            pytest.skip("MCP server not available")
+
+        assert result.get("success") == True
+        summaries = list_output_summaries("TestCity")
+        assert isinstance(summaries, list)
