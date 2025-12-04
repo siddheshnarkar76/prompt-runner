@@ -4,6 +4,11 @@
 
 The **Streamlit Prompt Runner** is a web application for urban planning compliance checking with 3D visualization. It allows users to input prompts, generate structured JSON specifications, check building compliance against DCR regulations, and visualize buildings in 3D.
 
+The backend is now **integrated with CreatorCore** via a unified bridge, with:
+- Standardized logging and feedback APIs
+- Unified feedback memory (`creator_feedback` collection)
+- Health and diagnostics endpoints for automated monitoring
+
 ---
 
 ## ✨ Features
@@ -29,18 +34,69 @@ cd "C:\prompt runner\streamlit-prompt-runner"
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Start MongoDB (if not running)
+# 3. Set environment variables (or use .env)
+export MONGO_URI="mongodb://localhost:27017"
+export MONGO_DB="mcp_database"
+export CREATORCORE_BASE_URL="http://localhost:5001"
+
+# 4. Start MongoDB (if not running)
 mongod
 
-# 4. Start MCP Server (Terminal 1)
+# 5. Start MCP / CreatorCore bridge server (Terminal 1)
 python mcp_server.py
 
-# 5. Start Streamlit App (Terminal 2)
+# 6. Start Streamlit App (Terminal 2)
 streamlit run main.py
 
-# 6. Open browser
+# 7. Open browser
 http://localhost:8501
 ```
+
+---
+
+## 🔌 CreatorCore Integration
+
+### Bridge Client
+
+The CreatorCore bridge client in `creatorcore_bridge/bridge_client.py` provides:
+- `POST /core/log` – send prompt/output logs
+- `POST /core/feedback` – send standardized feedback (1 / -1)
+- `GET /core/context` – fetch recent interactions for prompt warming
+
+Example:
+
+```python
+from creatorcore_bridge.bridge_client import get_bridge
+
+bridge = get_bridge()
+bridge.send_log(case_id="session_123", prompt="...", output={"city": "Mumbai"}, metadata={"city": "Mumbai"})
+bridge.send_feedback(case_id="session_123", feedback=1, prompt="...", output={"result": "ok"})
+context = bridge.get_context(user_id="user_123", limit=3)
+```
+
+### Health & Diagnostics
+
+The MCP server (`mcp_server.py`) exposes CreatorCore-friendly health endpoints:
+
+- `GET /system/health`
+- `GET /creatorcore/health` (alias to match sprint spec)
+
+Example response:
+
+```json
+{
+  "status": "active",
+  "core_bridge": true,
+  "feedback_store": true,
+  "last_run": "2025-12-02T08:25:32Z",
+  "tests_passed": 85
+}
+```
+
+Health checks and bridge syncs are logged under `reports/`:
+- `reports/health_log.json`
+- `reports/health_status.json`
+- `reports/core_bridge_runs.json`
 
 ---
 
@@ -48,35 +104,39 @@ http://localhost:8501
 
 ```
 streamlit-prompt-runner/
-├── main.py                # Main Streamlit application
-├── mcp_server.py          # MCP Flask API server
-├── upload_rules.py        # Upload city rules to database
-├── requirements.txt       # Python dependencies
+├── main.py                      # Main Streamlit application
+├── mcp_server.py                # MCP + CreatorCore Flask API server
+├── upload_rules.py              # Upload city rules to database
+├── requirements.txt             # Python dependencies
 │
-├── agents/                # AI Agents
-│   ├── design_agent.py    # Prompt → JSON spec
-│   ├── calculator_agent.py # Compliance checking
-│   ├── geometry_agent.py   # 3D generation
-│   └── rl_agent.py         # Reinforcement learning
+├── creatorcore_bridge/          # CreatorCore bridge integration
+│   ├── bridge_client.py         # Core bridge client (log/feedback/context)
+│   └── log_converter.py         # Log format conversion utilities
 │
-├── components/            # UI Components
-│   ├── glb_viewer.py      # 3D GLB viewer
-│   └── ui.py              # UI helpers
+├── agents/                      # AI Agents
+│   ├── design_agent.py          # Prompt → JSON spec
+│   ├── calculator_agent.py      # Compliance checking
+│   ├── geometry_agent.py        # 3D generation
+│   ├── evaluator_agent.py       # Rule-based evaluation agent (Mongo-backed)
+│   └── rl_agent.py              # RL agent w/ CreatorCore feedback integration
 │
-├── utils/                 # Utilities
-│   ├── geometry_converter.py # JSON → GLB conversion
-│   └── io_helpers.py          # File operations
+├── components/                  # UI Components
+│   ├── glb_viewer.py            # 3D GLB viewer
+│   └── ui.py                    # UI helpers
 │
-├── tests/                 # Test Suite (82 tests)
-│   ├── test_mcp.py
-│   ├── test_agents.py
-│   ├── test_geometry.py
-│   └── conftest.py
+├── utils/                       # Utilities
+│   └── ...                      # Geometry, IO, helpers, etc.
 │
-├── mcp_data/              # Data Storage
-│   └── rules.json         # 53 rules, 4 cities
+├── tests/                       # Test Suite
+│   ├── test_creatorcore_health.py   # Health & diagnostics tests
+│   └── ...                          # Other tests
 │
-└── outputs/geometry/      # Generated 3D models
+├── mcp_data/                    # Data Storage seeds
+│   ├── rules.json
+│   ├── geometry.json
+│   └── feedback.json
+│
+└── outputs/                     # Generated outputs (JSON, geometry, etc.)
 ```
 
 ---
@@ -101,10 +161,13 @@ Get structured JSON specification.
 - Interactive controls (rotate, zoom, pan)
 - Download 3D files
 
-### **4. Feedback System**
-- 👍 Positive feedback (+2 reward)
-- 👎 Negative feedback (-2 reward)
-- RL agent learns from feedback
+### **4. Feedback System (CreatorCore + MCP)**
+- 👍 Positive feedback (`"up"` → +2 reward, CreatorCore `feedback = 1`)
+- 👎 Negative feedback (`"down"` → -2 reward, CreatorCore `feedback = -1`)
+- Feedback is stored in:
+  - Legacy MCP `feedback` collection
+  - CreatorCore-style `creator_feedback` collection
+- RL agent reads cumulative scoring before next run via `agents.rl_agent.get_feedback_before_next_run`
 
 ---
 
@@ -114,14 +177,16 @@ Get structured JSON specification.
 # Run all tests
 pytest
 
+# Run CreatorCore-related tests
+pytest tests/test_creatorcore_* -v
+
 # Run with coverage
 pytest --cov=. --cov-report=html
-
-# Run specific test file
-pytest tests/test_geometry.py
 ```
 
-**Test Results**: 77/82 passed (94%)
+Health and CreatorCore diagnostics are also summarized in:
+- `reports/health_status.json`
+- `reports/final_status.json`
 
 ---
 
@@ -162,6 +227,7 @@ MONGO_DB=mcp_database
 
 - `QUICK_START.md` - Quick reference guide
 - `FRONTEND_GUIDE.md` - Frontend user guide
+- `handover_creatorcore_ready.md` - CreatorCore integration handover
 - `TEST_RESULTS.md` - Testing documentation
 - `tests/README.md` - Test suite guide
 
@@ -195,6 +261,8 @@ Built with:
 
 ---
 
-**Status**: ✅ Production Ready  
-**Version**: 2.0  
-**Last Updated**: November 5, 2025
+**Status**: ✅ Production Ready, CreatorCore-integrated  
+**Version**: 2.1  
+**Last Updated**: December 4, 2025
+
+
