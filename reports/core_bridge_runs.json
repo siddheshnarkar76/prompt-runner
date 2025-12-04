@@ -1,0 +1,95 @@
+[
+  {
+    "case_id": "sample_mumbai_20251202_082532",
+    "event": "prompt_submitted",
+    "prompt": "Generate urban planning specification for Mumbai city development",
+    "output": {
+      "city": "Mumbai",
+      "buildings": [
+        {
+          "type": "residential",
+          "floors": 10
+        }
+      ],
+      "roads": [
+        {
+          "type": "highway",
+          "length": 500
+        }
+      ],
+      "parks": [
+        {
+          "area": 10000
+        }
+      ]
+    },
+    "timestamp": "2025-12-02T08:25:32.668612Z",
+    "metadata": {
+      "city": "Mumbai",
+      "spec_filename": "sample_mumbai.json",
+      "source": "synthetic_sample"
+    }
+  },
+  {
+    "case_id": "sample_pune_20251202_082532",
+    "event": "prompt_submitted",
+    "prompt": "Generate urban planning specification for Pune city development",
+    "output": {
+      "city": "Pune",
+      "buildings": [
+        {
+          "type": "residential",
+          "floors": 10
+        }
+      ],
+      "roads": [
+        {
+          "type": "highway",
+          "length": 500
+        }
+      ],
+      "parks": [
+        {
+          "area": 10000
+        }
+      ]
+    },
+    "timestamp": "2025-12-02T08:25:32.668612Z",
+    "metadata": {
+      "city": "Pune",
+      "spec_filename": "sample_pune.json",
+      "source": "synthetic_sample"
+    }
+  },
+  {
+    "case_id": "sample_nashik_20251202_082532",
+    "event": "prompt_submitted",
+    "prompt": "Generate urban planning specification for Nashik city development",
+    "output": {
+      "city": "Nashik",
+      "buildings": [
+        {
+          "type": "residential",
+          "floors": 10
+        }
+      ],
+      "roads": [
+        {
+          "type": "highway",
+          "length": 500
+        }
+      ],
+      "parks": [
+        {
+          "area": 10000
+        }
+      ]
+    },
+    "timestamp": "2025-12-02T08:25:32.668612Z",
+    "metadata": {
+      "city": "Nashik",
+      "spec_filename": "sample_nashik.json",
+      "source": "synthetic_sample"
+    }
+  }
+]

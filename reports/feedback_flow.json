@@ -1,0 +1,55 @@
+{
+  "test_timestamp": "2025-12-02T08:26:42.130254Z",
+  "test_description": "CreatorCore Feedback Integration Test",
+  "feedback_submissions": [
+    {
+      "test_case": 1,
+      "case_id": "mumbai_test_001",
+      "feedback": "up",
+      "city": "Mumbai",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-02T08:27:05.530678Z"
+    },
+    {
+      "test_case": 2,
+      "case_id": "pune_test_001",
+      "feedback": "down",
+      "city": "Pune",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-02T08:27:28.909111Z"
+    },
+    {
+      "test_case": 3,
+      "case_id": "mumbai_test_001",
+      "feedback": "up",
+      "city": "Mumbai",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-02T08:27:52.295293Z"
+    }
+  ],
+  "cumulative_scoring": {
+    "mumbai_test_001": {
+      "session_id": "mumbai_test_001",
+      "confidence_score": 0.0,
+      "feedback_count": 0,
+      "feedback_history": [],
+      "last_feedback": null,
+      "recommendation": "neutral"
+    },
+    "pune_test_001": {
+      "session_id": "pune_test_001",
+      "confidence_score": 0.0,
+      "feedback_count": 0,
+      "feedback_history": [],
+      "last_feedback": null,
+      "recommendation": "neutral"
+    }
+  },
+  "success_count": 0,
+  "total_tests": 3,
+  "success_rate": 0.0,
+  "integration_status": "FAIL"
+}
