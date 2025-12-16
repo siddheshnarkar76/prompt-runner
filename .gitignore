@@ -69,3 +69,20 @@ desktop.ini
 build/
 dist/
 *.egg-info/
+
+# Pip / packaging
+pip-wheel-metadata/
+pip-log.txt
+
+# pip caches / installed packages
+*.egg
+
+# Node
+node_modules/
+
+# Secrets/config
+secrets.json
+
+# Ignore compiled python files anywhere
+*.pyc
+__pycache__/
