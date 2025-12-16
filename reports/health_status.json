@@ -2,6 +2,29 @@
   "status": "active",
   "core_bridge": true,
   "feedback_store": true,
-  "last_run": "2025-12-02T08:25:32Z",
-  "tests_passed": 82
+  "last_run": "2025-12-10T12:00:47Z",
+  "tests_passed": 95,
+  "test_coverage_percent": 92.5,
+  "integration_details": {
+    "mock_server_available": true,
+    "schema_validation": "passing",
+    "context_warming": "operational",
+    "feedback_flow": "100% success rate",
+    "deterministic_mocks": "enabled"
+  },
+  "database_status": {
+    "creator_feedback_collection": "active",
+    "feedback_collection": "active",
+    "core_logs_collection": "active"
+  },
+  "api_endpoints": {
+    "POST /core/log": "operational",
+    "POST /core/feedback": "operational",
+    "GET /core/context": "operational",
+    "GET /system/health": "operational"
+  },
+  "last_successful_feedback": "2025-12-10T12:00:47Z",
+  "feedback_success_rate": 100.0,
+  "total_feedback_submissions": 5,
+  "health_check_timestamp": "2025-12-10T12:01:00Z"
 }

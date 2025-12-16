@@ -1,1 +1,0 @@
-Create an IoT analytics dashboard showing device temperature and uptime trends.

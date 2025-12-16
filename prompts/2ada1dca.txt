@@ -1,1 +1,0 @@
-Design a landing page for an AI writing assistant startup called “Wordly”.  Include hero section, product demo, testimonials, and pricing plans.

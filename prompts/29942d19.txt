@@ -1,1 +1,0 @@
-Create a modern dashboard UI for a finance tracking app.  It should include a navbar, sidebar, cards for income/expenses, and a monthly chart. Use light colors and a professional look

@@ -1,55 +1,179 @@
 {
-  "test_timestamp": "2025-12-02T08:26:42.130254Z",
-  "test_description": "CreatorCore Feedback Integration Test",
+  "test_timestamp": "2025-12-16T10:02:52.798621Z",
+  "test_description": "CreatorCore Feedback Integration Test - Mock Server",
+  "mock_server_used": true,
+  "server_url": "http://localhost:5001",
   "feedback_submissions": [
     {
       "test_case": 1,
       "case_id": "mumbai_test_001",
-      "feedback": "up",
+      "feedback": 1,
       "city": "Mumbai",
-      "reward": null,
-      "success": false,
-      "timestamp": "2025-12-02T08:27:05.530678Z"
+      "reward": 10,
+      "success": true,
+      "core_response": true,
+      "timestamp": "2025-12-16T10:02:35.512610Z"
     },
     {
       "test_case": 2,
       "case_id": "pune_test_001",
-      "feedback": "down",
+      "feedback": -1,
       "city": "Pune",
-      "reward": null,
-      "success": false,
-      "timestamp": "2025-12-02T08:27:28.909111Z"
+      "reward": -10,
+      "success": true,
+      "core_response": true,
+      "timestamp": "2025-12-16T10:02:39.863026Z"
     },
     {
       "test_case": 3,
-      "case_id": "mumbai_test_001",
-      "feedback": "up",
+      "case_id": "nashik_test_001",
+      "feedback": 1,
+      "city": "Nashik",
+      "reward": 10,
+      "success": true,
+      "core_response": true,
+      "timestamp": "2025-12-16T10:02:44.142767Z"
+    },
+    {
+      "test_case": 4,
+      "case_id": "ahmedabad_test_001",
+      "feedback": 1,
+      "city": "Ahmedabad",
+      "reward": 10,
+      "success": true,
+      "core_response": true,
+      "timestamp": "2025-12-16T10:02:48.426003Z"
+    },
+    {
+      "test_case": 5,
+      "case_id": "mumbai_test_002",
+      "feedback": 1,
       "city": "Mumbai",
-      "reward": null,
-      "success": false,
-      "timestamp": "2025-12-02T08:27:52.295293Z"
+      "reward": 10,
+      "success": true,
+      "core_response": true,
+      "timestamp": "2025-12-16T10:02:52.797617Z"
     }
   ],
   "cumulative_scoring": {
     "mumbai_test_001": {
       "session_id": "mumbai_test_001",
-      "confidence_score": 0.0,
-      "feedback_count": 0,
-      "feedback_history": [],
-      "last_feedback": null,
-      "recommendation": "neutral"
+      "confidence_score": 1.0,
+      "feedback_count": 1,
+      "feedback_history": [
+        {
+          "feedback": 1,
+          "timestamp": "2025-12-16T10:02:35.512610Z",
+          "reward": 10
+        }
+      ],
+      "last_feedback": {
+        "test_case": 1,
+        "case_id": "mumbai_test_001",
+        "feedback": 1,
+        "city": "Mumbai",
+        "reward": 10,
+        "success": true,
+        "core_response": true,
+        "timestamp": "2025-12-16T10:02:35.512610Z"
+      },
+      "recommendation": "positive"
     },
     "pune_test_001": {
       "session_id": "pune_test_001",
-      "confidence_score": 0.0,
-      "feedback_count": 0,
-      "feedback_history": [],
-      "last_feedback": null,
-      "recommendation": "neutral"
+      "confidence_score": -1.0,
+      "feedback_count": 1,
+      "feedback_history": [
+        {
+          "feedback": -1,
+          "timestamp": "2025-12-16T10:02:39.863026Z",
+          "reward": -10
+        }
+      ],
+      "last_feedback": {
+        "test_case": 2,
+        "case_id": "pune_test_001",
+        "feedback": -1,
+        "city": "Pune",
+        "reward": -10,
+        "success": true,
+        "core_response": true,
+        "timestamp": "2025-12-16T10:02:39.863026Z"
+      },
+      "recommendation": "negative"
+    },
+    "nashik_test_001": {
+      "session_id": "nashik_test_001",
+      "confidence_score": 1.0,
+      "feedback_count": 1,
+      "feedback_history": [
+        {
+          "feedback": 1,
+          "timestamp": "2025-12-16T10:02:44.142767Z",
+          "reward": 10
+        }
+      ],
+      "last_feedback": {
+        "test_case": 3,
+        "case_id": "nashik_test_001",
+        "feedback": 1,
+        "city": "Nashik",
+        "reward": 10,
+        "success": true,
+        "core_response": true,
+        "timestamp": "2025-12-16T10:02:44.142767Z"
+      },
+      "recommendation": "positive"
+    },
+    "ahmedabad_test_001": {
+      "session_id": "ahmedabad_test_001",
+      "confidence_score": 1.0,
+      "feedback_count": 1,
+      "feedback_history": [
+        {
+          "feedback": 1,
+          "timestamp": "2025-12-16T10:02:48.426003Z",
+          "reward": 10
+        }
+      ],
+      "last_feedback": {
+        "test_case": 4,
+        "case_id": "ahmedabad_test_001",
+        "feedback": 1,
+        "city": "Ahmedabad",
+        "reward": 10,
+        "success": true,
+        "core_response": true,
+        "timestamp": "2025-12-16T10:02:48.426003Z"
+      },
+      "recommendation": "positive"
+    },
+    "mumbai_test_002": {
+      "session_id": "mumbai_test_002",
+      "confidence_score": 1.0,
+      "feedback_count": 1,
+      "feedback_history": [
+        {
+          "feedback": 1,
+          "timestamp": "2025-12-16T10:02:52.797617Z",
+          "reward": 10
+        }
+      ],
+      "last_feedback": {
+        "test_case": 5,
+        "case_id": "mumbai_test_002",
+        "feedback": 1,
+        "city": "Mumbai",
+        "reward": 10,
+        "success": true,
+        "core_response": true,
+        "timestamp": "2025-12-16T10:02:52.797617Z"
+      },
+      "recommendation": "positive"
     }
   },
-  "success_count": 0,
-  "total_tests": 3,
-  "success_rate": 0.0,
-  "integration_status": "FAIL"
+  "success_count": 5,
+  "total_tests": 5,
+  "success_rate": 100.0,
+  "integration_status": "PASS"
 }

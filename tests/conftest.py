@@ -1,15 +1,163 @@
 # tests/conftest.py
 """
-Pytest fixtures and configuration
+Pytest fixtures and configuration with deterministic mocks
 """
 import pytest
 import os
 import sys
 import json
 from datetime import datetime
+from unittest.mock import Mock, MagicMock, patch
+from pathlib import Path
 
 # Add parent directory to path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+
+# ===== Deterministic Mock Fixtures =====
+
+@pytest.fixture
+def mock_mongodb():
+    """Deterministic mock for MongoDB collections."""
+    mock_collection = MagicMock()
+    
+    # Deterministic responses
+    mock_collection.find_one.return_value = {
+        "received_at": "2025-12-10T10:00:00Z",
+        "case_id": "test_case_001"
+    }
+    mock_collection.estimated_document_count.return_value = 42
+    mock_collection.insert_one.return_value = MagicMock(inserted_id="mock_id_123")
+    mock_collection.find.return_value = [
+        {"case_id": "test_1", "feedback": 1, "timestamp": "2025-12-10T10:00:00Z"},
+        {"case_id": "test_2", "feedback": -1, "timestamp": "2025-12-10T10:01:00Z"}
+    ]
+    
+    return mock_collection
+
+
+@pytest.fixture
+def mock_creatorcore_response():
+    """Deterministic mock for CreatorCore API responses."""
+    return {
+        "success": True,
+        "message": "Operation successful",
+        "case_id": "test_case_001",
+        "reward": 10,
+        "timestamp": "2025-12-10T10:00:00Z"
+    }
+
+
+@pytest.fixture
+def mock_bridge_client(mock_creatorcore_response):
+    """Deterministic mock bridge client."""
+    mock_bridge = MagicMock()
+    
+    # send_log mock
+    mock_bridge.send_log.return_value = {
+        "success": True,
+        "case_id": "test_case_001",
+        "message": "Log received"
+    }
+    
+    # send_feedback mock
+    mock_bridge.send_feedback.return_value = mock_creatorcore_response
+    
+    # get_context mock
+    mock_bridge.get_context.return_value = {
+        "success": True,
+        "user_id": "test_user",
+        "context": [
+            {
+                "case_id": "prev_case_1",
+                "prompt": "Previous prompt 1",
+                "output": {"result": "output 1"},
+                "timestamp": "2025-12-10T09:00:00Z"
+            }
+        ],
+        "count": 1
+    }
+    
+    # health_check mock
+    mock_bridge.health_check.return_value = {
+        "bridge_connected": True,
+        "status": "active"
+    }
+    
+    return mock_bridge
+
+
+@pytest.fixture
+def deterministic_timestamp():
+    """Fixed timestamp for deterministic testing."""
+    return "2025-12-10T10:00:00.000000Z"
+
+
+@pytest.fixture
+def mock_datetime(deterministic_timestamp):
+    """Mock datetime with fixed timestamp."""
+    with patch('datetime.datetime') as mock_dt:
+        mock_dt.utcnow.return_value.isoformat.return_value = deterministic_timestamp.replace("Z", "")
+        yield mock_dt
+
+
+@pytest.fixture
+def temp_reports_dir(tmp_path):
+    """Temporary reports directory for testing."""
+    reports_dir = tmp_path / "reports"
+    reports_dir.mkdir()
+    return reports_dir
+
+
+@pytest.fixture
+def mock_feedback_history():
+    """Deterministic feedback history for testing."""
+    return [
+        {
+            "case_id": "test_001",
+            "feedback": 1,
+            "reward": 10,
+            "timestamp": "2025-12-10T09:00:00Z",
+            "city": "Mumbai"
+        },
+        {
+            "case_id": "test_002",
+            "feedback": -1,
+            "reward": -10,
+            "timestamp": "2025-12-10T09:30:00Z",
+            "city": "Pune"
+        },
+        {
+            "case_id": "test_003",
+            "feedback": 1,
+            "reward": 10,
+            "timestamp": "2025-12-10T10:00:00Z",
+            "city": "Mumbai"
+        }
+    ]
+
+
+@pytest.fixture
+def mock_test_coverage():
+    """Mock test coverage calculation."""
+    return 92.5  # Above 90% threshold
+
+
+@pytest.fixture(autouse=True)
+def reset_environment():
+    """Reset environment variables for each test."""
+    original_env = os.environ.copy()
+    
+    # Set test environment variables
+    os.environ['CREATORCORE_BASE_URL'] = 'http://localhost:5001'
+    os.environ['MONGO_URI'] = 'mongodb://localhost:27017'
+    os.environ['MONGO_DB'] = 'test_mcp_database'
+    
+    yield
+    
+    # Restore original environment
+    os.environ.clear()
+    os.environ.update(original_env)
 
 
 @pytest.fixture

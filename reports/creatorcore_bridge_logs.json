@@ -1,0 +1,511 @@
+[
+  {
+    "timestamp": "2025-12-06T03:33:37.759439Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-06T03:33:37.759439Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.765211Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-06T03:33:37.765211Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.803123Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-06T03:33:37.803123Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.830398Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-06T03:33:37.830398Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.861552Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2025-12-06T03:33:37.861552Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.902942Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.939354Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-06T03:33:37.989081Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-06T03:33:37.989081Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:29.080783Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_001",
+      "event": "prompt_processed",
+      "prompt": "Generate residential building for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 10
+      },
+      "timestamp": "2025-12-12T06:30:26.998871Z",
+      "metadata": {
+        "city": "Mumbai",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:31.159508Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-12T06:30:29.123336Z",
+      "prompt": "Generate residential building for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 10
+      },
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:33.217739Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "pune_test_001",
+      "event": "prompt_processed",
+      "prompt": "Create commercial complex in Pune",
+      "output": {
+        "city": "Pune",
+        "type": "commercial",
+        "floors": 15
+      },
+      "timestamp": "2025-12-12T06:30:31.187844Z",
+      "metadata": {
+        "city": "Pune",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:35.335294Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "pune_test_001",
+      "feedback": -1,
+      "timestamp": "2025-12-12T06:30:33.260398Z",
+      "prompt": "Create commercial complex in Pune",
+      "output": {
+        "city": "Pune",
+        "type": "commercial",
+        "floors": 15
+      },
+      "metadata": {
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:37.420705Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "nashik_test_001",
+      "event": "prompt_processed",
+      "prompt": "Design park layout for Nashik",
+      "output": {
+        "city": "Nashik",
+        "type": "park",
+        "area": 5000
+      },
+      "timestamp": "2025-12-12T06:30:35.369850Z",
+      "metadata": {
+        "city": "Nashik",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:39.477765Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "nashik_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-12T06:30:37.446809Z",
+      "prompt": "Design park layout for Nashik",
+      "output": {
+        "city": "Nashik",
+        "type": "park",
+        "area": 5000
+      },
+      "metadata": {
+        "city": "Nashik"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:41.548055Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "ahmedabad_test_001",
+      "event": "prompt_processed",
+      "prompt": "Plan highway route in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "type": "highway",
+        "length": 1200
+      },
+      "timestamp": "2025-12-12T06:30:39.521111Z",
+      "metadata": {
+        "city": "Ahmedabad",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:43.607570Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "ahmedabad_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-12T06:30:41.567777Z",
+      "prompt": "Plan highway route in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "type": "highway",
+        "length": 1200
+      },
+      "metadata": {
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:45.703941Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_002",
+      "event": "prompt_processed",
+      "prompt": "Update building specifications for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 12
+      },
+      "timestamp": "2025-12-12T06:30:43.648131Z",
+      "metadata": {
+        "city": "Mumbai",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-12T06:30:47.809653Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_002",
+      "feedback": 1,
+      "timestamp": "2025-12-12T06:30:45.740700Z",
+      "prompt": "Update building specifications for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 12
+      },
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:33.226734Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_001",
+      "event": "prompt_processed",
+      "prompt": "Generate residential building for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 10
+      },
+      "timestamp": "2025-12-16T10:02:31.063613Z",
+      "metadata": {
+        "city": "Mumbai",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:35.422488Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-16T10:02:33.333222Z",
+      "prompt": "Generate residential building for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 10
+      },
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:37.571632Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "pune_test_001",
+      "event": "prompt_processed",
+      "prompt": "Create commercial complex in Pune",
+      "output": {
+        "city": "Pune",
+        "type": "commercial",
+        "floors": 15
+      },
+      "timestamp": "2025-12-16T10:02:35.512610Z",
+      "metadata": {
+        "city": "Pune",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:39.766704Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "pune_test_001",
+      "feedback": -1,
+      "timestamp": "2025-12-16T10:02:37.696908Z",
+      "prompt": "Create commercial complex in Pune",
+      "output": {
+        "city": "Pune",
+        "type": "commercial",
+        "floors": 15
+      },
+      "metadata": {
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:41.920801Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "nashik_test_001",
+      "event": "prompt_processed",
+      "prompt": "Design park layout for Nashik",
+      "output": {
+        "city": "Nashik",
+        "type": "park",
+        "area": 5000
+      },
+      "timestamp": "2025-12-16T10:02:39.864028Z",
+      "metadata": {
+        "city": "Nashik",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:44.058459Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "nashik_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-16T10:02:42.008962Z",
+      "prompt": "Design park layout for Nashik",
+      "output": {
+        "city": "Nashik",
+        "type": "park",
+        "area": 5000
+      },
+      "metadata": {
+        "city": "Nashik"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:46.190125Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "ahmedabad_test_001",
+      "event": "prompt_processed",
+      "prompt": "Plan highway route in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "type": "highway",
+        "length": 1200
+      },
+      "timestamp": "2025-12-16T10:02:44.142767Z",
+      "metadata": {
+        "city": "Ahmedabad",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:48.352690Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "ahmedabad_test_001",
+      "feedback": 1,
+      "timestamp": "2025-12-16T10:02:46.283851Z",
+      "prompt": "Plan highway route in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "type": "highway",
+        "length": 1200
+      },
+      "metadata": {
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:50.525837Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_002",
+      "event": "prompt_processed",
+      "prompt": "Update building specifications for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 12
+      },
+      "timestamp": "2025-12-16T10:02:48.426003Z",
+      "metadata": {
+        "city": "Mumbai",
+        "source": "test_suite"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-16T10:02:52.687621Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "mumbai_test_002",
+      "feedback": 1,
+      "timestamp": "2025-12-16T10:02:50.632640Z",
+      "prompt": "Update building specifications for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "type": "residential",
+        "floors": 12
+      },
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  }
+]
