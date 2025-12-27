@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 MCP_API_URL = "http://127.0.0.1:5001/api/mcp/save_rule"
-RULES_FILE = "mcp_data/rules.json"
+RULES_FILE = "data/mcp/rules/rules.json"
 
 
 def upload_rules_to_mcp():

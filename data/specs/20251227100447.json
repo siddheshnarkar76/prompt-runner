@@ -1,0 +1,24 @@
+{
+  "case_id": "f0ae57df",
+  "city": "Mumbai",
+  "land_use_zone": null,
+  "plot_area_sq_m": null,
+  "plot_width_m": null,
+  "plot_frontage_m": null,
+  "abutting_road_width_m": null,
+  "building_use": null,
+  "building_type": null,
+  "is_core_area": null,
+  "height_m": null,
+  "fsi": null,
+  "setback_m": null,
+  "width_m": null,
+  "depth_m": null,
+  "type": "building_specification",
+  "description": "vhh",
+  "meta": {
+    "generated_by": "design_agent_v3",
+    "generated_at": "2025-12-27T10:04:47.276402Z",
+    "confidence": 0.9
+  }
+}

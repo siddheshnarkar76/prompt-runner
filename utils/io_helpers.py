@@ -3,15 +3,13 @@ import os
 import json
 from datetime import datetime
 
-SPEC_DIR = "specs"
-SEND_EVAL_DIR = "SEND_EVAL"
-SEND_UNREAL_DIR = "SEND_UNREAL"
-PROMPT_LOG = "prompt_logs.json"
-ACTION_LOG = "action_logs.json"
+# Updated paths to organized structure
+SPEC_DIR = "data/specs"
+PROMPT_LOG = "data/logs/prompt_logs.json"
+ACTION_LOG = "data/logs/action_logs.json"
 
 os.makedirs(SPEC_DIR, exist_ok=True)
-os.makedirs(SEND_EVAL_DIR, exist_ok=True)
-os.makedirs(SEND_UNREAL_DIR, exist_ok=True)
+os.makedirs("data/logs", exist_ok=True)
 
 def save_spec(spec):
     ts = datetime.utcnow().strftime("%Y%m%d%H%M%S")
@@ -40,7 +38,14 @@ def load_prompts():
         return json.load(f)
 
 def log_action(action, spec_id, details=None):
-    logs = load_logs().get("action_logs", [])
+    # Load existing logs
+    if os.path.exists(ACTION_LOG):
+        with open(ACTION_LOG) as f:
+            logs = json.load(f)
+    else:
+        logs = []
+    
+    # Append new action
     entry = {
         "timestamp": datetime.utcnow().isoformat()+"Z",
         "action": action,
@@ -48,6 +53,8 @@ def log_action(action, spec_id, details=None):
         "details": details or {}
     }
     logs.append(entry)
+    
+    # Save all logs (keeps history)
     with open(ACTION_LOG, "w") as f:
         json.dump(logs, f, indent=2)
 

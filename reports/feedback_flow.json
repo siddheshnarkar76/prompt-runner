@@ -53,6 +53,193 @@
       "success": true,
       "core_response": true,
       "timestamp": "2025-12-16T10:02:52.797617Z"
+    },
+    {
+      "case_id": "case_123",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-22T06:31:09.584832Z"
+    },
+    {
+      "case_id": "case_456",
+      "feedback": -1,
+      "city": "Unknown",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-22T06:31:31.323384Z"
+    },
+    {
+      "case_id": "case_789",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-22T06:31:52.846485Z"
+    },
+    {
+      "case_id": "case_test",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": null,
+      "success": false,
+      "timestamp": "2025-12-22T06:32:14.457083Z"
+    },
+    {
+      "case_id": "valid_test_001",
+      "feedback": 1,
+      "city": "Mumbai",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:19.573368Z"
+    },
+    {
+      "case_id": "file_ops_test",
+      "feedback": 1,
+      "city": "Mumbai",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:20.026611Z"
+    },
+    {
+      "case_id": "test_123",
+      "feedback": 1,
+      "city": "Mumbai",
+      "reward": 2,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:28.872083Z"
+    },
+    {
+      "case_id": "test_456",
+      "feedback": -1,
+      "city": "Pune",
+      "reward": -2,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:29.182519Z"
+    },
+    {
+      "case_id": "case_123",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:44.404104Z"
+    },
+    {
+      "case_id": "case_456",
+      "feedback": -1,
+      "city": "Unknown",
+      "reward": -10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:47.635757Z"
+    },
+    {
+      "case_id": "case_789",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:50.017258Z"
+    },
+    {
+      "case_id": "case_test",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:34:52.523008Z"
+    },
+    {
+      "case_id": "case_123",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:35:49.830172Z"
+    },
+    {
+      "case_id": "case_456",
+      "feedback": -1,
+      "city": "Unknown",
+      "reward": -10,
+      "success": true,
+      "timestamp": "2025-12-22T06:35:52.900177Z"
+    },
+    {
+      "case_id": "case_789",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:35:55.314698Z"
+    },
+    {
+      "case_id": "case_test",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:35:57.783462Z"
+    },
+    {
+      "case_id": "case_123",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:36:58.147557Z"
+    },
+    {
+      "case_id": "case_456",
+      "feedback": -1,
+      "city": "Unknown",
+      "reward": -10,
+      "success": true,
+      "timestamp": "2025-12-22T06:37:01.407772Z"
+    },
+    {
+      "case_id": "case_789",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:37:03.753704Z"
+    },
+    {
+      "case_id": "case_test",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 10,
+      "success": true,
+      "timestamp": "2025-12-22T06:37:06.050614Z"
+    },
+    {
+      "case_id": "test_123",
+      "feedback": 1,
+      "city": "Mumbai",
+      "reward": 1,
+      "success": true,
+      "timestamp": "2025-12-23T11:09:48.047225Z",
+      "rl_update": true
+    },
+    {
+      "case_id": "case_123",
+      "feedback": 1,
+      "city": "Unknown",
+      "reward": 2,
+      "success": true,
+      "timestamp": "2025-12-24T06:17:51.597274Z",
+      "rl_update": true
+    },
+    {
+      "case_id": "case_456",
+      "feedback": -1,
+      "city": "Unknown",
+      "reward": -2,
+      "success": true,
+      "timestamp": "2025-12-24T06:17:54.142463Z",
+      "rl_update": true
     }
   ],
   "cumulative_scoring": {

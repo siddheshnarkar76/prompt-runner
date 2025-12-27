@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-12-24 11:47:58",
+  "summary": {
+    "passed": 8,
+    "total": 9,
+    "pass_rate": "88.9%",
+    "status": "ISSUES DETECTED"
+  },
+  "checks": {
+    "MongoDB": {
+      "status": "PASS",
+      "details": "Connected to mongodb+srv://siddhesh001:siddhesh%40123@cluster0.nkufv4z.mongodb.net/mcp_database?retryWrites=true&w=majority&ssl=true&tlsAllowInvalidCertificates=true (11 collections)"
+    },
+    "MCP Server": {
+      "status": "FAIL",
+      "details": "Error: HTTPConnectionPool(host='localhost', port=5001): Read timed out. (read timeout=3)"
+    },
+    "Streamlit UI": {
+      "status": "PASS",
+      "details": "Streamlit UI running"
+    },
+    "Core Log Endpoint": {
+      "status": "PASS",
+      "details": "Endpoint accepting logs"
+    },
+    "Core Feedback Endpoint": {
+      "status": "PASS",
+      "details": "Endpoint accepting feedback"
+    },
+    "Rules Loaded": {
+      "status": "PASS",
+      "details": "78 rules loaded (Mumbai)"
+    },
+    "Feedback History": {
+      "status": "PASS",
+      "details": "Feedback: 3 entries, RL logs: 16 entries"
+    },
+    "RL Agent": {
+      "status": "PASS",
+      "details": "RL agent active (visits: 1, success_rate: 1.00)"
+    },
+    "Complete Workflow": {
+      "status": "PASS",
+      "details": "Complete workflow successful"
+    }
+  }
+}

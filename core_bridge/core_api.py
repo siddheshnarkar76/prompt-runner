@@ -17,9 +17,12 @@ from requests.adapters import HTTPAdapter, Retry
 
 logger = logging.getLogger('core_bridge.core_api')
 
-CORE_API_BASE = os.environ.get('CORE_API_BASE', 'http://localhost:5001/core')
-CORE_LOG_ENDPOINT = f'{CORE_API_BASE}/log'
-CORE_STATUS_ENDPOINT = f'{CORE_API_BASE}/status'
+# Core API configuration - points to MCP server
+CORE_API_BASE = os.environ.get('CORE_API_BASE', 'http://localhost:5001')
+CORE_LOG_ENDPOINT = f'{CORE_API_BASE}/core/log'
+CORE_FEEDBACK_ENDPOINT = f'{CORE_API_BASE}/core/feedback'
+CORE_CONTEXT_ENDPOINT = f'{CORE_API_BASE}/core/context'
+CORE_STATUS_ENDPOINT = f'{CORE_API_BASE}/system/health'
 
 _session: Optional[requests.Session] = None
 
@@ -78,7 +81,7 @@ def get_core_status() -> Dict[str, Any]:
     """Fetch the Core service health status.
     
     Returns:
-        Status dictionary with 'status', 'core_sync', etc.
+        Status dictionary with 'status', 'integration_ready', etc.
         
     Raises:
         requests.RequestException: If the request fails
@@ -89,10 +92,65 @@ def get_core_status() -> Dict[str, Any]:
         response.raise_for_status()
         return response.json()
     except requests.RequestException as e:
-        logger.warning(f"Failed to get Core status: {e}")
+        logger.warning(f"Failed to get Core status from {CORE_STATUS_ENDPOINT}: {e}")
         return {
             'status': 'unavailable',
-            'core_sync': False,
+            'integration_ready': False,
+            'error': str(e)
+        }
+
+
+def post_core_feedback(payload: Dict[str, Any]) -> Dict[str, Any]:
+    """Send feedback to Core API.
+    
+    Args:
+        payload: Dictionary containing feedback data (case_id, feedback, etc.)
+        
+    Returns:
+        Response JSON from Core API
+        
+    Raises:
+        requests.RequestException: If the request fails
+    """
+    session = _get_session()
+    body = dict(payload or {})
+    body.setdefault('timestamp', datetime.utcnow().isoformat() + 'Z')
+    
+    try:
+        response = session.post(CORE_FEEDBACK_ENDPOINT, json=body, timeout=5)
+        response.raise_for_status()
+        logger.info(f"Successfully posted feedback to Core: {payload.get('case_id')}")
+        return response.json()
+    except requests.RequestException as e:
+        logger.warning(f"Failed to post feedback to Core: {e}")
+        # Still append to local log even if Core is unavailable
+        append_local_core_log({'type': 'feedback_sync_failed', **body})
+        raise
+
+
+def get_core_context(session_id: str, limit: int = 10) -> Dict[str, Any]:
+    """Retrieve historical context from Core API.
+    
+    Args:
+        session_id: Session identifier
+        limit: Maximum number of entries to retrieve
+        
+    Returns:
+        Context dictionary with historical entries
+    """
+    session = _get_session()
+    try:
+        params = {'session_id': session_id, 'limit': limit}
+        response = session.get(CORE_CONTEXT_ENDPOINT, params=params, timeout=5)
+        response.raise_for_status()
+        logger.info(f"Retrieved context for session {session_id}")
+        return response.json()
+    except requests.RequestException as e:
+        logger.warning(f"Failed to get Core context: {e}")
+        return {
+            'success': False,
+            'session_id': session_id,
+            'entries': [],
             'error': str(e)
         }
 

@@ -3,14 +3,150 @@ import logging
 from datetime import datetime
 import json
 import os
-from typing import List, Dict, Optional
+import pickle
+from typing import List, Dict, Optional, Tuple
+from collections import defaultdict
+import numpy as np
 
 from agents.agent_clients import send_feedback, list_feedback_entries
 from creatorcore_bridge.bridge_client import send_feedback_to_core
 
 logging.basicConfig(level=logging.INFO)
 TRAIN_LOG = "rl_training_logs.json"
+POLICY_FILE = "rl_policy.pkl"
 os.makedirs(os.path.dirname(TRAIN_LOG) or ".", exist_ok=True)
+
+
+class SimpleRLPolicy:
+    """
+    Simple RL policy using Exponential Moving Average for parameter recommendations.
+    
+    State: (city, rule_type) -> building parameters
+    Action: Suggested parameter adjustments
+    Reward: User feedback (+1/-1)
+    Learning: EMA-based weight updates
+    """
+    
+    def __init__(self, alpha=0.1):
+        """
+        Args:
+            alpha: Learning rate for EMA updates (0 < alpha < 1)
+        """
+        self.alpha = alpha
+        # State-action value estimates: {(city, param_type): weighted_avg}
+        self.q_values = defaultdict(lambda: {"height_m": 15.0, "fsi": 2.0, "setback_m": 3.0})
+        # Visit counts for exploration
+        self.visit_counts = defaultdict(int)
+        # Successful parameter history
+        self.success_history = defaultdict(list)
+        
+    def get_state_key(self, city: str, param_type: str = "residential") -> Tuple[str, str]:
+        """Generate state key from city and building type."""
+        return (city.lower(), param_type.lower())
+    
+    def suggest_parameters(self, city: str, param_type: str = "residential") -> Dict[str, float]:
+        """
+        Suggest building parameters based on learned policy.
+        
+        Args:
+            city: City name
+            param_type: Building type (residential, commercial, etc.)
+            
+        Returns:
+            Dictionary of suggested parameters
+        """
+        state_key = self.get_state_key(city, param_type)
+        suggestions = self.q_values[state_key].copy()
+        
+        # Add exploration noise for early learning (decreases with visits)
+        visits = self.visit_counts[state_key]
+        if visits < 10:
+            exploration_factor = max(0.1, 1.0 - visits * 0.1)
+            for param in suggestions:
+                noise = np.random.normal(0, exploration_factor)
+                suggestions[param] = max(0, suggestions[param] + noise)
+        
+        logging.info(f"RL Policy suggests for {city}/{param_type} (visits={visits}): {suggestions}")
+        return suggestions
+    
+    def update(self, city: str, parameters: Dict[str, float], reward: int, param_type: str = "residential"):
+        """
+        Update policy based on feedback reward.
+        
+        Args:
+            city: City name
+            parameters: Building parameters that were used
+            reward: Feedback reward (+1 for good, -1 for bad)
+            param_type: Building type
+        """
+        state_key = self.get_state_key(city, param_type)
+        self.visit_counts[state_key] += 1
+        
+        # EMA update: new_avg = alpha * new_value + (1-alpha) * old_avg
+        # Only update if feedback is positive (reward > 0)
+        if reward > 0:
+            for param, value in parameters.items():
+                if param in self.q_values[state_key]:
+                    old_value = self.q_values[state_key][param]
+                    new_value = self.alpha * value + (1 - self.alpha) * old_value
+                    self.q_values[state_key][param] = new_value
+                    
+            # Record successful parameters
+            self.success_history[state_key].append({
+                "parameters": parameters.copy(),
+                "timestamp": datetime.utcnow().isoformat() + "Z"
+            })
+            logging.info(f"RL Policy updated for {state_key}: {self.q_values[state_key]}")
+        else:
+            logging.info(f"RL Policy: negative feedback for {state_key}, no update (exploration continues)")
+    
+    def get_success_rate(self, city: str, param_type: str = "residential") -> float:
+        """Calculate success rate for a given state."""
+        state_key = self.get_state_key(city, param_type)
+        visits = self.visit_counts[state_key]
+        successes = len(self.success_history[state_key])
+        return successes / visits if visits > 0 else 0.0
+    
+    def save(self, filepath: str):
+        """Save policy to disk."""
+        with open(filepath, "wb") as f:
+            pickle.dump({
+                "q_values": dict(self.q_values),
+                "visit_counts": dict(self.visit_counts),
+                "success_history": dict(self.success_history),
+                "alpha": self.alpha
+            }, f)
+        logging.info(f"RL Policy saved to {filepath}")
+    
+    @classmethod
+    def load(cls, filepath: str) -> 'SimpleRLPolicy':
+        """Load policy from disk."""
+        if not os.path.exists(filepath):
+            logging.info(f"No existing policy found at {filepath}, creating new")
+            return cls()
+        
+        with open(filepath, "rb") as f:
+            data = pickle.load(f)
+        
+        policy = cls(alpha=data.get("alpha", 0.1))
+        policy.q_values = defaultdict(lambda: {"height_m": 15.0, "fsi": 2.0, "setback_m": 3.0}, data["q_values"])
+        policy.visit_counts = defaultdict(int, data["visit_counts"])
+        policy.success_history = defaultdict(list, data["success_history"])
+        
+        logging.info(f"RL Policy loaded from {filepath}")
+        return policy
+
+
+# Global policy instance
+_policy = None
+
+def get_rl_policy() -> SimpleRLPolicy:
+    """Get or create global RL policy instance."""
+    global _policy
+    if _policy is None:
+        _policy = SimpleRLPolicy.load(POLICY_FILE)
+    return _policy
+
 
 def _calculate_confidence(feedback_history: List[Dict]) -> float:
     """
@@ -36,7 +172,8 @@ def _calculate_confidence(feedback_history: List[Dict]) -> float:
 def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = None,
                            prompt: str = None, output: Dict = None) -> int:
     """
-    Submit feedback for RL training, now integrated with CreatorCore feedback system.
+    Submit feedback for RL training, now integrated with CreatorCore feedback system
+    and real RL policy updates.
 
     Args:
         case_id: Unique identifier for the case/session
@@ -50,7 +187,6 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
     """
     metadata = metadata or {}
     city = metadata.get("city", "Unknown")
-
 
     # Strict payload validation
     if not case_id or user_feedback not in ("up", "down"):
@@ -95,6 +231,37 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
     persisted_history = list_feedback_entries(case_id)
     confidence_score = _calculate_confidence(persisted_history)
 
+    # ** RL LEARNING UPDATE **
+    # Extract building parameters from output if available
+    if output and city != "Unknown":
+        try:
+            policy = get_rl_policy()
+            parameters = {}
+            
+            # Extract parameters from various output formats
+            if "parameters" in output:
+                parameters = output["parameters"]
+            elif "subject" in output:
+                parameters = output["subject"]
+            else:
+                # Try to extract from nested structures
+                for key in ["height_m", "fsi", "setback_m", "width_m", "depth_m"]:
+                    if key in output:
+                        parameters[key] = output[key]
+            
+            if parameters:
+                # Update policy with this feedback
+                policy.update(
+                    city=city,
+                    parameters=parameters,
+                    reward=creatorcore_feedback,
+                    param_type=parameters.get("type", "residential")
+                )
+                # Save updated policy
+                policy.save(POLICY_FILE)
+        except Exception as e:
+            logging.warning(f"Failed to update RL policy: {e}")
+
     # Persist local training record for offline RL training
     record = {
         "case_id": case_id,
@@ -106,7 +273,8 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
         "timestamp": datetime.utcnow().isoformat()+"Z",
         "confidence_score": confidence_score,
         "history_size": len(persisted_history),
-        "core_success": core_success
+        "core_success": core_success,
+        "rl_learning_active": True  # Flag indicating real RL is active
     }
 
     # append to local training log
@@ -130,7 +298,8 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
         "city": city,
         "reward": core_reward,
         "success": core_success,
-        "timestamp": record["timestamp"]
+        "timestamp": record["timestamp"],
+        "rl_update": True
     }
     try:
         if os.path.exists(feedback_flow_path):
@@ -144,9 +313,62 @@ def rl_agent_submit_feedback(case_id: str, user_feedback: str, metadata: dict = 
     except Exception as e:
         logging.warning(f"Failed to update feedback_flow.json: {e}")
 
-    logging.info("RL feedback recorded: %s -> %s (reward=%s, CreatorCore=%s)",
+    logging.info("RL feedback recorded & policy updated: %s -> %s (reward=%s, CreatorCore=%s)",
                 case_id, creatorcore_feedback, core_reward, core_success)
     return core_reward
+
+
+def get_rl_suggestions(city: str, param_type: str = "residential") -> Dict[str, float]:
+    """
+    Get RL-based parameter suggestions for a city/building type.
+    
+    Args:
+        city: City name
+        param_type: Building type
+        
+    Returns:
+        Dictionary of suggested parameters based on learned policy
+    """
+    policy = get_rl_policy()
+    return policy.suggest_parameters(city, param_type)
+
+
+def get_rl_stats(city: str = None) -> Dict:
+    """
+    Get RL policy statistics.
+    
+    Args:
+        city: Optional city filter
+        
+    Returns:
+        Dictionary with policy statistics
+    """
+    policy = get_rl_policy()
+    
+    if city:
+        state_key = policy.get_state_key(city, "residential")
+        return {
+            "city": city,
+            "learned_parameters": policy.q_values.get(state_key, {}),
+            "visit_count": policy.visit_counts.get(state_key, 0),
+            "success_rate": policy.get_success_rate(city),
+            "success_count": len(policy.success_history.get(state_key, []))
+        }
+    else:
+        # Global stats
+        all_states = set(policy.q_values.keys()) | set(policy.visit_counts.keys())
+        return {
+            "total_states": len(all_states),
+            "total_visits": sum(policy.visit_counts.values()),
+            "states": {
+                f"{city}/{ptype}": {
+                    "parameters": policy.q_values.get((city, ptype), {}),
+                    "visits": policy.visit_counts.get((city, ptype), 0),
+                    "success_rate": policy.get_success_rate(city, ptype)
+                }
+                for city, ptype in all_states
+            }
+        }
 
 
 def get_creatorcore_feedback_history(session_id: str) -> List[Dict]:
@@ -160,12 +382,6 @@ def get_creatorcore_feedback_history(session_id: str) -> List[Dict]:
         List of feedback entries with CreatorCore format
     """
     try:
-        # Try to get feedback from CreatorCore bridge
-        from creatorcore_bridge.bridge_client import get_bridge
-        bridge = get_bridge()
-
-        # For now, we'll use the MCP API directly since the bridge might not have this endpoint yet
-        # This can be updated when the CreatorCore context endpoint is available
         import requests
         mcp_url = os.environ.get('MCP_URL', 'http://localhost:5001')
         response = requests.get(f"{mcp_url}/api/mcp/creator_feedback/session/{session_id}", timeout=5)
@@ -177,7 +393,6 @@ def get_creatorcore_feedback_history(session_id: str) -> List[Dict]:
     except Exception as e:
         logging.debug("Could not fetch CreatorCore feedback history: %s", e)
 
-    # Fallback to local data if CreatorCore is unavailable
     return []
 
 

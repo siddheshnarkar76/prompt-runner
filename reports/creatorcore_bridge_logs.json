@@ -507,5 +507,2116 @@
         "city": "Mumbai"
       }
     }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:15.084430Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:32:15.084430Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:15.393233Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:32:15.393233Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:15.606361Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:32:15.604321Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:15.814675Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:32:15.814675Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:15.998273Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:32:15.997281Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:16.218671Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:16.453888Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:16.778861Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:32:16.776818Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:20.495881Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:23.698666Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:26.876444Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:30.042320Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:32:27.976347Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:32.205205Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:32:30.113423Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:34.346191Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:32:32.269511Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:36.503837Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:32:34.419044Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:38.873913Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:32:36.763290Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:40.998122Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:32:44.139954Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:32:42.099904Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:46.345061Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:32:44.237661Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:48.806821Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:32:46.715671Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:51.052981Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:32:48.968931Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:53.270276Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:32:51.223500Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:55.490146Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_5",
+      "event": "prompt_processed",
+      "prompt": "Prompt 5",
+      "output": {
+        "result": "output 5"
+      },
+      "timestamp": "2025-12-22T06:32:53.424320Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:57.703191Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_6",
+      "event": "prompt_processed",
+      "prompt": "Prompt 6",
+      "output": {
+        "result": "output 6"
+      },
+      "timestamp": "2025-12-22T06:32:55.644720Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:32:59.936277Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_7",
+      "event": "prompt_processed",
+      "prompt": "Prompt 7",
+      "output": {
+        "result": "output 7"
+      },
+      "timestamp": "2025-12-22T06:32:57.856666Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:02.182038Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_8",
+      "event": "prompt_processed",
+      "prompt": "Prompt 8",
+      "output": {
+        "result": "output 8"
+      },
+      "timestamp": "2025-12-22T06:33:00.123300Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:04.384768Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_9",
+      "event": "prompt_processed",
+      "prompt": "Prompt 9",
+      "output": {
+        "result": "output 9"
+      },
+      "timestamp": "2025-12-22T06:33:02.309661Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:06.615998Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:08.831117Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:12.030530Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_0",
+      "event": "prompt_processed",
+      "prompt": "Old prompt 1",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:33:09.976482Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:14.224492Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_1",
+      "event": "prompt_processed",
+      "prompt": "Old prompt 2",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:33:12.148332Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:16.409872Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_2",
+      "event": "prompt_processed",
+      "prompt": "Recent prompt 1",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:33:14.339071Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:18.561407Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_3",
+      "event": "prompt_processed",
+      "prompt": "Recent prompt 2",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:33:16.496126Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:20.763290Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_4",
+      "event": "prompt_processed",
+      "prompt": "Most recent prompt",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:33:18.699651Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:22.944064Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:26.130196Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "structure_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt for structure",
+      "output": {
+        "result": "test output"
+      },
+      "timestamp": "2025-12-22T06:33:24.059068Z",
+      "metadata": {
+        "user_id": "user_structure_test",
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:28.320827Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:31.531276Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Build a residential building in Mumbai",
+      "output": {
+        "type": "residential"
+      },
+      "timestamp": "2025-12-22T06:33:29.442575Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:33.745767Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Add a park near the building",
+      "output": {
+        "type": "park"
+      },
+      "timestamp": "2025-12-22T06:33:31.674918Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:35.921986Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Create road access to the park",
+      "output": {
+        "type": "road"
+      },
+      "timestamp": "2025-12-22T06:33:33.845712Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:38.187876Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:41.499916Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "format_case",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2025-12-22T06:33:39.411740Z",
+      "metadata": {
+        "user_id": "user_format_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:43.731541Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:47.011368Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "user1_case",
+      "event": "prompt_processed",
+      "prompt": "User 1 prompt",
+      "output": {
+        "data": "user1"
+      },
+      "timestamp": "2025-12-22T06:33:44.933389Z",
+      "metadata": {
+        "user_id": "user_isolation_1"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:49.183310Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "user2_case",
+      "event": "prompt_processed",
+      "prompt": "User 2 prompt",
+      "output": {
+        "data": "user2"
+      },
+      "timestamp": "2025-12-22T06:33:47.140613Z",
+      "metadata": {
+        "user_id": "user_isolation_2"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:51.444751Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:53.696676Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:33:57.015939Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_0",
+      "event": "prompt_processed",
+      "prompt": "Build in Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "result": "planned"
+      },
+      "timestamp": "2025-12-22T06:33:54.910977Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:33:59.248889Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_1",
+      "event": "prompt_processed",
+      "prompt": "Build in Pune",
+      "output": {
+        "city": "Pune",
+        "result": "planned"
+      },
+      "timestamp": "2025-12-22T06:33:57.190266Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:01.499685Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_2",
+      "event": "prompt_processed",
+      "prompt": "Build in Nashik",
+      "output": {
+        "city": "Nashik",
+        "result": "planned"
+      },
+      "timestamp": "2025-12-22T06:33:59.418028Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Nashik"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:03.820693Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_3",
+      "event": "prompt_processed",
+      "prompt": "Build in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "result": "planned"
+      },
+      "timestamp": "2025-12-22T06:34:01.702205Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:06.310986Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:09.583156Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "prev_run",
+      "event": "prompt_processed",
+      "prompt": "Previous prompt",
+      "output": {
+        "result": "previous output"
+      },
+      "timestamp": "2025-12-22T06:34:07.491754Z",
+      "metadata": {
+        "user_id": "user_next_run",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:11.807368Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "prev_run",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:09.721555Z",
+      "metadata": {
+        "user_id": "user_next_run"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:14.009638Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:14.478565Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "http_error_test",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2025-12-22T06:34:14.478565Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:16.850888Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "no_metadata_test",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:14.795191Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:19.110352Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "string_feedback_test",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:17.026110Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:19.812205Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "json_error_test",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2025-12-22T06:34:19.812205Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:22.210063Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_test_Mumbai",
+      "event": "prompt_processed",
+      "prompt": "Test for Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:20.145012Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:24.423966Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_test_Pune",
+      "event": "prompt_processed",
+      "prompt": "Test for Pune",
+      "output": {
+        "city": "Pune",
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:22.362146Z",
+      "metadata": {
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:26.575145Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_test_Nashik",
+      "event": "prompt_processed",
+      "prompt": "Test for Nashik",
+      "output": {
+        "city": "Nashik",
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:24.534666Z",
+      "metadata": {
+        "city": "Nashik"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:28.740206Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_test_Ahmedabad",
+      "event": "prompt_processed",
+      "prompt": "Test for Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:26.701017Z",
+      "metadata": {
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:31.585796Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 404,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:33.753453Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 404,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:44.254425Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_123",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:42.184461Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:47.522536Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_456",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:34:45.469921Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "down",
+        "reward": -2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:49.879809Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_789",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:47.805176Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": null
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:52.255116Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_test",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:50.188102Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:53.084375Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:53.084375Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:53.623947Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:53.622947Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:54.176360Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:54.176360Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:54.537378Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:34:54.537378Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:54.736455Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:34:54.736455Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:54.930906Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:55.144470Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:34:55.417710Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:34:55.417710Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:34:59.022425Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:02.201989Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:05.335699Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:08.467345Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:35:06.410002Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:10.604473Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:35:08.570689Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:12.753737Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:35:10.708455Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:14.937313Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:35:12.855384Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:17.119862Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:35:15.065529Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:19.299988Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:22.501607Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:35:20.440089Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:24.650559Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:35:22.586782Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:26.846718Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:35:24.765078Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:29.001629Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:35:26.940359Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:31.151237Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:35:29.089850Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:33.276407Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_5",
+      "event": "prompt_processed",
+      "prompt": "Prompt 5",
+      "output": {
+        "result": "output 5"
+      },
+      "timestamp": "2025-12-22T06:35:31.235546Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:35.971667Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 404,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:49.713996Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_123",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:35:47.618926Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:52.735937Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_456",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:35:50.685928Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "down",
+        "reward": -2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:55.181826Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_789",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:35:53.103092Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": null
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:57.651337Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_test",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:35:55.584865Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.104711Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:35:58.104711Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.223565Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:35:58.223565Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.365164Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:35:58.364167Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.484297Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:35:58.484297Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.574105Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:35:58.574105Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.683427Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:58.865153Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:35:59.036131Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:35:59.036131Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:02.403821Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:36:05.563749Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:36:08.715275Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:36:11.886172Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:36:09.833894Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:14.047442Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:36:11.989198Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:16.200143Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:36:14.149838Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:18.388220Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:36:16.335571Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:20.686192Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:36:18.609731Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:22.945220Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:36:26.175382Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:36:24.095187Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:28.385822Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:36:26.299856Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:30.551020Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:36:28.480062Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:32.688951Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:36:30.627153Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:34.788304Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:36:32.746522Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:36:38.351834Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 404,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:36:57.971413Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_123",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:36:55.844799Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:01.330490Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_456",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:36:59.240521Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "down",
+        "reward": -2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:03.658538Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_789",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:37:01.578117Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": null
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:05.974678Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_test",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:37:03.909072Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.255712Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:37:06.255712Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.314317Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:37:06.314317Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.405829Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:37:06.405829Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.471471Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2025-12-22T06:37:06.471471Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.532783Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2025-12-22T06:37:06.532783Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.597070Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.673878Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:06.761291Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2025-12-22T06:37:06.761291Z"
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:10.019650Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:13.163791Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:16.318980Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:19.475822Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:37:17.398526Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:21.612192Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:37:19.517084Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:23.748742Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:37:21.677902Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:25.893015Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2025-12-22T06:37:23.815847Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:28.018852Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2025-12-22T06:37:25.955234Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:30.143457Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-22T06:37:33.286174Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2025-12-22T06:37:31.200141Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:35.397441Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2025-12-22T06:37:33.332058Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-22T06:37:37.495170Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2025-12-22T06:37:35.439876Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-24T06:17:46.577687Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2025-12-24T06:17:51.513201Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "case_123",
+      "feedback": 1,
+      "timestamp": "2025-12-24T06:17:49.426277Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "up",
+        "reward": 2
+      }
+    }
+  },
+  {
+    "timestamp": "2025-12-24T06:17:54.066547Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "case_456",
+      "feedback": -1,
+      "timestamp": "2025-12-24T06:17:52.012348Z",
+      "metadata": {
+        "city": "Unknown",
+        "legacy_feedback": "down",
+        "reward": -2
+      }
+    }
   }
 ]

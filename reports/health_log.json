@@ -182,5 +182,105 @@
     "last_run": "2025-11-27T07:33:46.301046Z",
     "tests_passed": 100,
     "checked_at": "2025-12-02T08:54:52.283024Z"
+  },
+  {
+    "status": "active",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": 85,
+    "integration_ready": true,
+    "last_run": "never",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2025-12-22T06:29:31.175212Z"
+  },
+  {
+    "status": "degraded",
+    "core_bridge": false,
+    "feedback_store": true,
+    "tests_passed": 85,
+    "integration_ready": false,
+    "last_run": "2025-12-02T08:00:00Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2025-12-22T06:34:31.657001Z"
+  },
+  {
+    "status": "degraded",
+    "core_bridge": false,
+    "feedback_store": true,
+    "tests_passed": 45,
+    "integration_ready": false,
+    "last_run": "never",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2025-12-22T06:34:33.813932Z"
+  },
+  {
+    "status": "degraded",
+    "core_bridge": false,
+    "feedback_store": true,
+    "tests_passed": 82,
+    "integration_ready": false,
+    "last_run": "2025-12-22T06:32:17.030017Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2025-12-22T06:36:36.130504Z"
+  },
+  {
+    "status": "degraded",
+    "core_bridge": false,
+    "feedback_store": true,
+    "tests_passed": 82,
+    "integration_ready": false,
+    "last_run": "2025-12-22T06:32:17.030017Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2025-12-22T06:37:38.869784Z"
   }
 ]

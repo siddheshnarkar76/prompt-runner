@@ -8,6 +8,16 @@ import json
 from pathlib import Path
 from dotenv import load_dotenv
 import logging
+from typing import Dict, Any, Tuple, List
+import requests
+from utils.rule_explanation import format_rule_outcomes
+
+USE_MOCK_MONGO = os.environ.get("USE_MOCK_MONGO") == "1"
+if USE_MOCK_MONGO:
+    try:
+        import mongomock  # type: ignore
+    except Exception as exc:
+        raise SystemExit(f"USE_MOCK_MONGO=1 but mongomock is not installed: {exc}")
 
 load_dotenv()
 
@@ -23,11 +33,15 @@ MONGO_URI = os.environ.get(
 )
 MONGO_DB = os.environ.get("MONGO_DB", os.environ.get("MCP_DB", "mcp_database"))
 
-# Create client with reasonable timeout
+# Create client with reasonable timeout (supports mocked mode)
 try:
-    client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=10000)
-    client.admin.command("ping")
-    logger.info("Connected to MongoDB (URI from env or default).")
+    if USE_MOCK_MONGO:
+        client = mongomock.MongoClient()  # type: ignore
+        logger.info("Using mongomock MongoClient (USE_MOCK_MONGO=1)")
+    else:
+        client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=10000)
+        client.admin.command("ping")
+        logger.info("Connected to MongoDB (URI from env or default).")
 except Exception as e:
     logger.exception("Cannot connect to MongoDB. Check MONGO_URI and network: %s", e)
     raise SystemExit(1)
@@ -48,6 +62,104 @@ REPORTS_DIR = Path("reports")
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 CORE_SYNC_PATH = REPORTS_DIR / "core_sync.json"
 HEALTH_LOG_PATH = REPORTS_DIR / "health_log.json"
+
+
+# --- Validation helpers (contract-first gateway) ---
+def _error_response(errors: List[str], status_code: int = 400):
+    return jsonify({"success": False, "errors": errors}), status_code
+
+
+def _validate_allowed_keys(payload: Dict[str, Any], allowed: List[str], required: List[str]) -> List[str]:
+    errors: List[str] = []
+    unknown = sorted(set(payload.keys()) - set(allowed))
+    if unknown:
+        errors.append(f"Unknown fields: {', '.join(unknown)}")
+    missing = [k for k in required if k not in payload or payload.get(k) in (None, "")]
+    if missing:
+        errors.append(f"Missing required fields: {', '.join(missing)}")
+    return errors
+
+
+def _validate_core_log_payload(payload: Dict[str, Any]) -> Tuple[bool, List[str], Dict[str, Any]]:
+    allowed = ["case_id", "prompt", "output", "metadata", "event", "timestamp"]
+    required = ["case_id"]
+    errors = _validate_allowed_keys(payload, allowed, required)
+
+    case_id = payload.get("case_id")
+    if case_id is not None and not isinstance(case_id, str):
+        errors.append("case_id must be a string")
+
+    prompt = payload.get("prompt")
+    if prompt is not None and not isinstance(prompt, str):
+        errors.append("prompt must be a string if provided")
+
+    output = payload.get("output")
+    if output is not None and not isinstance(output, dict):
+        errors.append("output must be an object")
+
+    metadata = payload.get("metadata")
+    if metadata is not None and not isinstance(metadata, dict):
+        errors.append("metadata must be an object")
+
+    event = payload.get("event")
+    if event is not None and not isinstance(event, str):
+        errors.append("event must be a string if provided")
+
+    timestamp = payload.get("timestamp")
+    if timestamp is not None and not isinstance(timestamp, str):
+        errors.append("timestamp must be an ISO8601 string if provided")
+
+    normalized = {k: payload.get(k) for k in allowed if k in payload}
+    return (len(errors) == 0, errors, normalized)
+
+
+def _validate_core_feedback_payload(payload: Dict[str, Any]) -> Tuple[bool, List[str], Dict[str, Any]]:
+    allowed = ["case_id", "feedback", "prompt", "output", "metadata", "timestamp"]
+    required = ["case_id", "feedback"]
+    errors = _validate_allowed_keys(payload, allowed, required)
+
+    case_id = payload.get("case_id")
+    if case_id is not None and not isinstance(case_id, str):
+        errors.append("case_id must be a string")
+
+    feedback = payload.get("feedback")
+    if feedback not in (1, -1, 0):
+        errors.append("feedback must be one of 1, -1, 0 (integer)")
+
+    prompt = payload.get("prompt")
+    if prompt is not None and not isinstance(prompt, str):
+        errors.append("prompt must be a string if provided")
+
+    output = payload.get("output")
+    if output is not None and not isinstance(output, dict):
+        errors.append("output must be an object")
+
+    metadata = payload.get("metadata")
+    if metadata is not None and not isinstance(metadata, dict):
+        errors.append("metadata must be an object")
+
+    timestamp = payload.get("timestamp")
+    if timestamp is not None and not isinstance(timestamp, str):
+        errors.append("timestamp must be an ISO8601 string if provided")
+
+    normalized = {k: payload.get(k) for k in allowed if k in payload}
+    return (len(errors) == 0, errors, normalized)
+
+
+def _validate_core_context_params(user_id: Any, limit_param: Any) -> Tuple[bool, List[str], int]:
+    errors: List[str] = []
+    if not user_id or not isinstance(user_id, str):
+        errors.append("user_id is required and must be a string")
+
+    limit = 3
+    if limit_param is not None:
+        try:
+            limit = int(limit_param)
+        except Exception:
+            errors.append("limit must be an integer")
+    if limit < 1 or limit > 50:
+        errors.append("limit must be between 1 and 50")
+    return (len(errors) == 0, errors, limit)
 
 
 def _append_report_entry(path: Path, entry: dict) -> None:
@@ -423,6 +535,25 @@ def list_output_summaries(city):
         logger.exception("Error listing summaries: %s", e)
         return jsonify({"success": False, "error": str(e)}), 500
 
+@app.route("/api/mcp/output_explained/<city>", methods=["GET"])
+def list_output_explained(city):
+    try:
+        docs = list(output_summaries_col.find({"city": city}))
+        explained_docs = []
+        for doc in docs:
+            items = doc.get("summary", [])
+            explained_items = format_rule_outcomes(items)
+            explained_docs.append({
+                "city": doc.get("city"),
+                "case_id": doc.get("case_id"),
+                "created_at": doc.get("created_at"),
+                "items": explained_items
+            })
+        return jsonify({"success": True, "explained_summaries": explained_docs}), 200
+    except Exception as e:
+        logger.exception("Error listing explained summaries: %s", e)
+        return jsonify({"success": False, "error": str(e)}), 500
+
 
 def _build_core_status():
     latest_log = core_logs_col.find_one(sort=[("received_at", -1)])
@@ -512,6 +643,29 @@ def _log_health_snapshot(snapshot: dict) -> None:
     _append_report_entry(HEALTH_LOG_PATH, snapshot_with_ts)
 
 
+def _ping_mongo() -> Tuple[bool, str]:
+    try:
+        client.admin.command("ping")
+        return True, "ok"
+    except Exception as exc:
+        logger.warning("Mongo ping failed: %s", exc)
+        return False, str(exc)
+
+
+def _ping_noopur() -> Tuple[bool, bool, str]:
+    """Return (enabled, ok, error)."""
+    url = os.environ.get("NOOPUR_HEALTH_URL")
+    if not url:
+        return False, False, "disabled"
+    try:
+        res = requests.get(url, timeout=3)
+        ok = res.status_code == 200
+        return True, ok, None if ok else f"status {res.status_code}"
+    except Exception as exc:
+        logger.warning("Noopur ping failed: %s", exc)
+        return True, False, str(exc)
+
+
 # === Core Bridge Endpoints ===
 @app.route("/core/log", methods=["POST"])
 def core_log():
@@ -520,7 +674,11 @@ def core_log():
         if not payload:
             return jsonify({"success": False, "error": "Empty payload"}), 400
 
-        entry = dict(payload)
+        ok, errors, normalized = _validate_core_log_payload(payload)
+        if not ok:
+            return _error_response(errors, 400)
+
+        entry = dict(normalized)
         entry.setdefault("received_at", datetime.utcnow().isoformat() + "Z")
         res = core_logs_col.insert_one(entry)
         _append_report_entry(CORE_SYNC_PATH, entry)
@@ -543,25 +701,23 @@ def core_feedback():
         if not payload:
             return jsonify({"success": False, "error": "Empty payload"}), 400
 
-        case_id = payload.get("case_id")
-        feedback = payload.get("feedback")
-        
-        if not case_id:
-            return jsonify({"success": False, "error": "Missing 'case_id'"}), 400
-        
-        if feedback not in (1, -1, 0):
-            return jsonify({"success": False, "error": "'feedback' must be 1, -1, or 0"}), 400
+        ok, errors, normalized = _validate_core_feedback_payload(payload)
+        if not ok:
+            return _error_response(errors, 400)
+
+        case_id = normalized.get("case_id")
+        feedback = normalized.get("feedback")
 
         # Store in creator_feedback collection
         entry = {
             "session_id": case_id,  # Use case_id as session_id for compatibility
-            "prompt": payload.get("prompt", ""),
-            "output": payload.get("output", {}),
+            "prompt": normalized.get("prompt", ""),
+            "output": normalized.get("output", {}),
             "feedback": feedback,
-            "timestamp": payload.get("timestamp", datetime.utcnow().isoformat() + "Z"),
-            "city": payload.get("metadata", {}).get("city", "Unknown")
+            "timestamp": normalized.get("timestamp", datetime.utcnow().isoformat() + "Z"),
+            "city": normalized.get("metadata", {}).get("city", "Unknown")
         }
-        
+
         fres = creator_feedback_col.insert_one(entry)
         
         # Also save to RL logs for training
@@ -594,10 +750,11 @@ def core_context():
     """
     try:
         user_id = request.args.get("user_id")
-        limit = int(request.args.get("limit", 3))
-        
-        if not user_id:
-            return jsonify({"success": False, "error": "Missing 'user_id' parameter"}), 400
+        limit_param = request.args.get("limit", 3)
+
+        ok, errors, limit = _validate_core_context_params(user_id, limit_param)
+        if not ok:
+            return _error_response(errors, 400)
 
         # Fetch recent logs for this user (using case_id as user_id)
         recent_logs = list(core_logs_col.find(
@@ -648,7 +805,7 @@ def system_health():
         # Get current system status
         core_status = _build_core_status()
 
-        # Check bridge connectivity - actually test the endpoints
+        # Bridge connectivity check
         bridge_connected = False
         try:
             from creatorcore_bridge.bridge_client import get_bridge
@@ -659,21 +816,49 @@ def system_health():
             logger.warning(f"Bridge connectivity check failed: {e}")
             bridge_connected = False
 
-        # Check feedback store (both legacy and CreatorCore)
-        legacy_feedback_count = feedback_col.estimated_document_count()
-        creator_feedback_count = creator_feedback_col.estimated_document_count()
-        feedback_store_healthy = (legacy_feedback_count >= 0) and (creator_feedback_count >= 0)
+        # Feedback store health (legacy + CreatorCore collections reachable)
+        try:
+            legacy_feedback_count = feedback_col.estimated_document_count()
+            creator_feedback_count = creator_feedback_col.estimated_document_count()
+            feedback_store_healthy = (legacy_feedback_count >= 0) and (creator_feedback_count >= 0)
+        except Exception as e:
+            logger.warning(f"Feedback store check failed: {e}")
+            feedback_store_healthy = False
 
-        # Calculate test coverage (simplified - could run actual tests)
+        # Dependency pings
+        mongo_ok, mongo_err = _ping_mongo()
+        noopur_enabled, noopur_ok, noopur_err = _ping_noopur()
+
+        # Test coverage (deterministic gate; can be configured to a threshold)
         test_coverage = _calculate_test_coverage()
 
-        # Build CreatorCore format response
+        # Integration readiness gate (deterministic boolean)
+        integration_ready = (
+            bridge_connected
+            and feedback_store_healthy
+            and mongo_ok
+            and (not noopur_enabled or noopur_ok)
+            and test_coverage >= 70
+        )
+
+        overall_status = "active" if integration_ready else "degraded"
+
+        # Build normalized health payload
         health_status = {
-            "status": "active" if core_status.get("core_sync") and bridge_connected else "degraded",
+            "status": overall_status,
             "core_bridge": bridge_connected,
             "feedback_store": feedback_store_healthy,
+            "tests_passed": test_coverage,
+            "integration_ready": integration_ready,
             "last_run": core_status.get("last_run") or "never",
-            "tests_passed": test_coverage
+            "dependencies": {
+                "mongo": {"ok": mongo_ok, "error": None if mongo_ok else mongo_err},
+                "noopur": {
+                    "enabled": noopur_enabled,
+                    "ok": noopur_ok if noopur_enabled else None,
+                    "error": None if (not noopur_enabled or noopur_ok) else noopur_err,
+                },
+            },
         }
 
         _log_health_snapshot(health_status)
@@ -685,8 +870,13 @@ def system_health():
             "status": "unavailable",
             "core_bridge": False,
             "feedback_store": False,
-            "last_run": "error",
             "tests_passed": 0,
+            "integration_ready": False,
+            "dependencies": {
+                "mongo": {"ok": False, "error": "health_exception"},
+                "noopur": {"enabled": False, "ok": None, "error": "health_exception"},
+            },
+            "last_run": "error",
             "error": str(e)
         }), 500
 

@@ -1,0 +1,463 @@
+[
+  {
+    "case_id": "case_123",
+    "feedback": "up",
+    "reward": 2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:36:31.667279Z"
+  },
+  {
+    "case_id": "case_456",
+    "feedback": "down",
+    "reward": -2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:36:31.667279Z"
+  },
+  {
+    "case_id": "case_123",
+    "feedback": "up",
+    "reward": 2,
+    "meta": {
+      "test": "data"
+    },
+    "timestamp": "2025-11-05T05:36:32.383549Z"
+  },
+  {
+    "case_id": "case_456",
+    "feedback": "down",
+    "reward": -2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:36:32.411075Z"
+  },
+  {
+    "case_id": "case_123",
+    "feedback": "up",
+    "reward": 2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:59:53.619626Z"
+  },
+  {
+    "case_id": "case_456",
+    "feedback": "down",
+    "reward": -2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:59:53.639851Z"
+  },
+  {
+    "case_id": "case_123",
+    "feedback": "up",
+    "reward": 2,
+    "meta": {
+      "test": "data"
+    },
+    "timestamp": "2025-11-05T05:59:59.076901Z"
+  },
+  {
+    "case_id": "case_456",
+    "feedback": "down",
+    "reward": -2,
+    "meta": {},
+    "timestamp": "2025-11-05T05:59:59.199837Z"
+  },
+  {
+    "case_id": "mumbai_test_001",
+    "session_id": "mumbai_test_001",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": null,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-02T08:27:05.527237Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "pune_test_001",
+    "session_id": "pune_test_001",
+    "feedback": "down",
+    "creatorcore_feedback": -1,
+    "reward": null,
+    "meta": {
+      "city": "Pune"
+    },
+    "city": "Pune",
+    "timestamp": "2025-12-02T08:27:28.880487Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "mumbai_test_001",
+    "session_id": "mumbai_test_001",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": null,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-02T08:27:52.263878Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": 2,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-02T08:53:36.369609Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": "down",
+    "creatorcore_feedback": -1,
+    "reward": -2,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-02T08:53:57.826684Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_789",
+    "session_id": "case_789",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": null,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-02T08:54:19.364483Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "test_123",
+    "session_id": "test_123",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": 2,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-02T08:54:43.280397Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "test_456",
+    "session_id": "test_456",
+    "feedback": "down",
+    "creatorcore_feedback": -1,
+    "reward": -2,
+    "meta": {
+      "city": "Pune"
+    },
+    "city": "Pune",
+    "timestamp": "2025-12-02T08:54:45.469622Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": 2,
+    "meta": {
+      "test": "data"
+    },
+    "city": "Unknown",
+    "timestamp": "2025-12-02T08:55:18.299326Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": "down",
+    "creatorcore_feedback": -1,
+    "reward": -2,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-02T08:55:39.696169Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "mumbai_test_001",
+    "session_id": "mumbai_test_001",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": null,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-06T03:34:31.261080Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "pune_test_001",
+    "session_id": "pune_test_001",
+    "feedback": "down",
+    "creatorcore_feedback": -1,
+    "reward": null,
+    "meta": {
+      "city": "Pune"
+    },
+    "city": "Pune",
+    "timestamp": "2025-12-06T03:35:13.952744Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "mumbai_test_001",
+    "session_id": "mumbai_test_001",
+    "feedback": "up",
+    "creatorcore_feedback": 1,
+    "reward": null,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-06T03:35:56.540019Z",
+    "confidence_score": 0.0,
+    "history_size": 0
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": 1,
+    "reward": null,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:31:09.584832Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": false
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": -1,
+    "reward": null,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:31:31.323384Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": false
+  },
+  {
+    "case_id": "case_789",
+    "session_id": "case_789",
+    "feedback": 1,
+    "reward": null,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:31:52.846485Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": false
+  },
+  {
+    "case_id": "valid_test_001",
+    "session_id": "valid_test_001",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-22T06:34:19.573368Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "test_123",
+    "session_id": "test_123",
+    "feedback": 1,
+    "reward": 2,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-22T06:34:28.872083Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "test_456",
+    "session_id": "test_456",
+    "feedback": -1,
+    "reward": -2,
+    "meta": {
+      "city": "Pune"
+    },
+    "city": "Pune",
+    "timestamp": "2025-12-22T06:34:29.182519Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:34:44.404104Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": -1,
+    "reward": -10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:34:47.635757Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_789",
+    "session_id": "case_789",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:34:50.017258Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:35:49.830172Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": -1,
+    "reward": -10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:35:52.900177Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_789",
+    "session_id": "case_789",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:35:55.314698Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:36:58.147557Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": -1,
+    "reward": -10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:37:01.407772Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "case_789",
+    "session_id": "case_789",
+    "feedback": 1,
+    "reward": 10,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-22T06:37:03.753704Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true
+  },
+  {
+    "case_id": "test_123",
+    "session_id": "test_123",
+    "feedback": 1,
+    "reward": 1,
+    "meta": {
+      "city": "Mumbai"
+    },
+    "city": "Mumbai",
+    "timestamp": "2025-12-23T11:09:48.047225Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true,
+    "rl_learning_active": true
+  },
+  {
+    "case_id": "case_123",
+    "session_id": "case_123",
+    "feedback": 1,
+    "reward": 2,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-24T06:17:51.597274Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true,
+    "rl_learning_active": true
+  },
+  {
+    "case_id": "case_456",
+    "session_id": "case_456",
+    "feedback": -1,
+    "reward": -2,
+    "meta": {},
+    "city": "Unknown",
+    "timestamp": "2025-12-24T06:17:54.142463Z",
+    "confidence_score": 0.0,
+    "history_size": 0,
+    "core_success": true,
+    "rl_learning_active": true
+  }
+]

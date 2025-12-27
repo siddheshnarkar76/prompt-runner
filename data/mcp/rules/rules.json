@@ -1,0 +1,192 @@
+{
+  "Mumbai": [
+    {
+      "city": "Mumbai",
+      "clause_no": "DCPR-6",
+      "required_fields": [
+        "land_use_zone",
+        "plot_area_sq_m",
+        "abutting_road_width_m",
+        "height_m"
+      ],
+      "conditions": {
+        "land_use_zone": [
+          "R1",
+          "R2"
+        ],
+        "abutting_road_width_m": {
+          "min": 9
+        }
+      },
+      "limits": {
+        "height_m": 24,
+        "fsi": {
+          "max": 2.5
+        }
+      }
+    },
+    {
+      "city": "Mumbai",
+      "clause_no": "DCPR-14",
+      "required_fields": [
+        "land_use_zone",
+        "plot_area_sq_m",
+        "building_use",
+        "fsi"
+      ],
+      "conditions": {
+        "building_use": [
+          "commercial",
+          "mixed"
+        ],
+        "land_use_zone": [
+          "Commercial",
+          "Mixed"
+        ]
+      },
+      "limits": {
+        "fsi": {
+          "max": 3.0
+        }
+      }
+    },
+    {
+      "city": "Mumbai",
+      "clause_no": "DCPR-11",
+      "required_fields": [
+        "abutting_road_width_m",
+        "setback_m"
+      ],
+      "conditions": {
+        "abutting_road_width_m": {
+          "min": 6
+        }
+      },
+      "limits": {
+        "setback_m": {
+          "min": 3
+        }
+      }
+    }
+  ],
+  "Pune": [
+    {
+      "city": "Pune",
+      "clause_no": "PMC-5",
+      "required_fields": [
+        "land_use_zone",
+        "plot_area_sq_m",
+        "height_m"
+      ],
+      "conditions": {
+        "land_use_zone": [
+          "R1",
+          "R2"
+        ],
+        "plot_area_sq_m": {
+          "min": 100
+        }
+      },
+      "limits": {
+        "height_m": 21
+      }
+    },
+    {
+      "city": "Pune",
+      "clause_no": "PMC-7",
+      "required_fields": [
+        "abutting_road_width_m",
+        "fsi"
+      ],
+      "conditions": {
+        "abutting_road_width_m": {
+          "min": 9
+        }
+      },
+      "limits": {
+        "fsi": {
+          "max": 2.0
+        }
+      }
+    }
+  ],
+  "Ahmedabad": [
+    {
+      "city": "Ahmedabad",
+      "clause_no": "AMC-10",
+      "required_fields": [
+        "land_use_zone",
+        "plot_area_sq_m",
+        "height_m"
+      ],
+      "conditions": {
+        "land_use_zone": [
+          "R1",
+          "R2",
+          "Mixed"
+        ]
+      },
+      "limits": {
+        "height_m": 18
+      }
+    },
+    {
+      "city": "Ahmedabad",
+      "clause_no": "AMC-12",
+      "required_fields": [
+        "abutting_road_width_m",
+        "fsi"
+      ],
+      "conditions": {
+        "abutting_road_width_m": {
+          "min": 7.5
+        }
+      },
+      "limits": {
+        "fsi": {
+          "max": 1.8
+        }
+      }
+    }
+  ],
+  "Nashik": [
+    {
+      "city": "Nashik",
+      "clause_no": "NMC-4",
+      "required_fields": [
+        "land_use_zone",
+        "plot_area_sq_m",
+        "building_use"
+      ],
+      "conditions": {
+        "building_use": [
+          "residential"
+        ],
+        "plot_area_sq_m": {
+          "min": 120
+        }
+      },
+      "limits": {
+        "height_m": 15
+      }
+    },
+    {
+      "city": "Nashik",
+      "clause_no": "NMC-8",
+      "required_fields": [
+        "abutting_road_width_m",
+        "setback_m"
+      ],
+      "conditions": {
+        "abutting_road_width_m": {
+          "min": 6
+        }
+      },
+      "limits": {
+        "setback_m": {
+          "min": 2.5
+        }
+      }
+    }
+  ]
+}

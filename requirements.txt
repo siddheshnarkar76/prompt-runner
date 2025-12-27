@@ -10,3 +10,8 @@ flask
 pytest
 pytest-cov
 pytest-mock
+mongomock
+fastapi
+uvicorn[standard]
+pydantic
+httpx

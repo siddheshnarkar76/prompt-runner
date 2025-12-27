@@ -157,12 +157,13 @@ def render_glb_viewer(glb_path: str, height: int = 600, width: str = "100%"):
     components.html(html_code, height=height)
 
 
-def show_geometry_gallery(geometry_dir: str = "outputs/geometry"):
+def show_geometry_gallery(geometry_dir: str = "data/outputs/geometry"):
     """
     Display a gallery of all available GLB files with viewer
     """
     if not os.path.exists(geometry_dir):
-        st.warning(f"Geometry directory not found: {geometry_dir}")
+        os.makedirs(geometry_dir, exist_ok=True)
+        st.info(f"Geometry directory created: {geometry_dir}")
         return
     
     glb_files = [f for f in os.listdir(geometry_dir) if f.endswith('.glb')]

@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import shutil
-from utils.io_helpers import load_logs, log_action, SEND_EVAL_DIR, SEND_UNREAL_DIR
+from utils.io_helpers import load_logs, log_action
 
 def prompt_input():
     return st.text_input("Enter your prompt:", key="prompt_input")
@@ -47,27 +47,30 @@ def action_buttons(selected_prompt):
         st.sidebar.info("Select a prompt to enable routing actions.")
         return
 
-    spec_path = os.path.join("specs", f"{selected_prompt}.json")
+    spec_path = os.path.join("data/specs", f"{selected_prompt}.json")
     if not os.path.exists(spec_path):
         st.sidebar.error("Spec file not found for this prompt.")
         return
 
-    if st.sidebar.button("Send to Evaluator", key=f"send_eval_{selected_prompt}"):
-        os.makedirs(SEND_EVAL_DIR, exist_ok=True)
-        dest = os.path.join(SEND_EVAL_DIR, os.path.basename(spec_path))
-        try:
-            shutil.copyfile(spec_path, dest)
-            log_action("send_to_evaluator", selected_prompt)
-            st.sidebar.success("Spec sent to Evaluator.")
-        except Exception as e:
-            st.sidebar.error(f"Failed to send to Evaluator: {e}")
+    st.sidebar.markdown("### 🚀 Actions")
+    
+    col1, col2 = st.sidebar.columns(2)
+    
+    with col1:
+        if st.button("📤 Evaluator", key="send_evaluator"):
+            target_dir = "data/send_to_evaluator"
+            os.makedirs(target_dir, exist_ok=True)
+            target_path = os.path.join(target_dir, f"{selected_prompt}.json")
+            shutil.copy(spec_path, target_path)
+            log_action("send_to_evaluator", selected_prompt, {"destination": target_path})
+            st.sidebar.success(f"✅ Sent to Evaluator")
+    
+    with col2:
+        if st.button("🎮 Unreal", key="send_unreal"):
+            target_dir = "data/send_to_unreal"
+            os.makedirs(target_dir, exist_ok=True)
+            target_path = os.path.join(target_dir, f"{selected_prompt}.json")
+            shutil.copy(spec_path, target_path)
+            log_action("send_to_unreal", selected_prompt, {"destination": target_path})
+            st.sidebar.success(f"✅ Sent to Unreal Engine")
 
-    if st.sidebar.button("Send to Unreal Engine", key=f"send_unreal_{selected_prompt}"):
-        os.makedirs(SEND_UNREAL_DIR, exist_ok=True)
-        dest = os.path.join(SEND_UNREAL_DIR, os.path.basename(spec_path))
-        try:
-            shutil.copyfile(spec_path, dest)
-            log_action("send_to_unreal", selected_prompt)
-            st.sidebar.success("Spec sent to Unreal Engine.")
-        except Exception as e:
-            st.sidebar.error(f"Failed to send to Unreal Engine: {e}")

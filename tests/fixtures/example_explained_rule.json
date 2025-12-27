@@ -1,0 +1,52 @@
+{
+  "city": "Mumbai",
+  "test_subject": {
+    "height_m": 21.0,
+    "width_m": 30.0,
+    "depth_m": 20.0,
+    "setback_m": 3.0,
+    "fsi": 2.5,
+    "type": "residential"
+  },
+  "mock_rule_evaluation": {
+    "clause_no": "DCPR-2034-12.3",
+    "checks": {
+      "height": {
+        "subject": 21,
+        "rule": {"op": "<=", "value_m": 15},
+        "ok": false
+      },
+      "fsi": {
+        "subject": 2.5,
+        "rule": 2.0,
+        "ok": false
+      }
+    }
+  },
+  "expected_explained_output": {
+    "summary": "Overall assessment: Non-compliant with Clause DCPR-2034-12.3 for building height, FSI; no parameters found compliant.",
+    "explanation": [
+      "As per DCPR 2034, Clause DCPR-2034-12.3, the permissible building height is a maximum of 15 meters.",
+      "The proposed building height is 21 meters, which exceeds the permissible limit.",
+      "Therefore, with respect to building height, the proposal is non-compliant under Clause DCPR-2034-12.3.",
+      "As per DCPR 2034, Clause DCPR-2034-12.3, the permissible FSI is an FSI not exceeding 2.0.",
+      "The proposed FSI is 2.5, which exceeds the permissible limit.",
+      "Therefore, with respect to FSI, the proposal is non-compliant under Clause DCPR-2034-12.3."
+    ],
+    "technical": {
+      "clause_no": "DCPR-2034-12.3",
+      "checks": {
+        "height": {
+          "subject": 21,
+          "rule": {"op": "<=", "value_m": 15},
+          "ok": false
+        },
+        "fsi": {
+          "subject": 2.5,
+          "rule": 2.0,
+          "ok": false
+        }
+      }
+    }
+  }
+}
