@@ -1,0 +1,34 @@
+# Parent project ignore
+.git
+prompt-to-json-main/.git
+prompt-to-json-clean/.git
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environments
+.venv/
+backend/.venv/
+prompt-to-json-main/backend/.venv/
+
+# Env files
+.env
+.env.*
+
+# Data & outputs
+backend/data/
+data/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+*.tmp

@@ -1,0 +1,47 @@
+# Prefect deployment configuration
+name: bhiv-ai-assistant
+version: 1.0.0
+
+# Prefect version
+prefect-version: 2.14.0
+
+# Build configuration
+build:
+  - prefect_docker.deployments.steps.build_docker_image:
+      id: build-image
+      requires: prefect-docker>=0.3.0
+      image_name: bhiv-ai-assistant
+      tag: latest
+      dockerfile: auto
+
+# Push configuration
+push:
+  - prefect_docker.deployments.steps.push_docker_image:
+      requires: prefect-docker>=0.3.0
+      image_name: "{{ build-image.image_name }}"
+      tag: "{{ build-image.tag }}"
+
+# Pull configuration
+pull:
+  - prefect.deployments.steps.set_working_directory:
+      directory: /opt/prefect/bhiv-ai-assistant
+
+# Deployment configurations
+deployments:
+  - name: bhiv-production
+    version: 1.0.0
+    tags:
+      - production
+      - ai-assistant
+      - bhiv
+    description: BHIV AI Assistant production deployment
+    entrypoint: bhiv_workflow.py:bhiv_workflow
+    parameters:
+      prompt: "Create a modern kitchen design"
+      user_id: "default"
+    work_pool:
+      name: default-agent-pool
+      work_queue_name: default
+    schedule:
+      cron: "0 */6 * * *"  # Run every 6 hours
+      timezone: "UTC"

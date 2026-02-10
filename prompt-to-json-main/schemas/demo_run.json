@@ -1,0 +1,19 @@
+{
+  "trace_id": "demo-trace-id-fixed-12345",
+  "case_id": "demo-case-001",
+  "prompt": "make a building",
+  "city": "Mumbai",
+  "success": true,
+  "compliance_status": {
+    "status": "partial",
+    "rules_evaluated": 0,
+    "rules_passed": 0,
+    "rules_failed": 0,
+    "evaluations": []
+  },
+  "geometry": {
+    "generated": false,
+    "path": null,
+    "format": "glb"
+  }
+}

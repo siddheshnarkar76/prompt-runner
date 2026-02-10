@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "name": "Run Schema",
+  "description": "Deterministic agent execution flow with strict sequencing",
+  "execution_mode": "sequential_deterministic",
+  "agents": [
+    {
+      "name": "parsing_agent",
+      "version": "1.0.0",
+      "order": 1,
+      "enabled": true,
+      "input": {
+        "prompt": "string (required)",
+        "city": "string (required)"
+      },
+      "output": {
+        "case_id": "string",
+        "spec": "object",
+        "trace_id": "string"
+      },
+      "timeout_ms": 5000,
+      "fallback": null,
+      "required": true
+    },
+    {
+      "name": "rule_classification_agent",
+      "version": "1.0.0",
+      "order": 2,
+      "enabled": true,
+      "input": {
+        "spec": "object (from parsing_agent)",
+        "city": "string"
+      },
+      "output": {
+        "applicable_rules": "array of rule objects",
+        "count": "integer"
+      },
+      "timeout_ms": 3000,
+      "fallback": { "applicable_rules": [], "count": 0 },
+      "required": false
+    },
+    {
+      "name": "calculator_agent",
+      "version": "1.0.0",
+      "order": 3,
+      "enabled": true,
+      "input": {
+        "spec": "object",
+        "rules": "array"
+      },
+      "output": {
+        "evaluations": "array of evaluation results"
+      },
+      "timeout_ms": 5000,
+      "fallback": { "evaluations": [] },
+      "required": false
+    },
+    {
+      "name": "geometry_agent",
+      "version": "1.0.0",
+      "order": 4,
+      "enabled": true,
+      "input": {
+        "case_id": "string",
+        "spec": "object"
+      },
+      "output": {
+        "geometry_path": "string (path to .glb file)",
+        "generated": "boolean"
+      },
+      "timeout_ms": 5000,
+      "fallback": { "geometry_path": null, "generated": false },
+      "required": false
+    }
+  ],
+  "logging": {
+    "format": "json",
+    "level": "INFO",
+    "telemetry_enabled": true,
+    "trace_id_propagation": "required"
+  },
+  "validation": {
+    "schema_validation": "strict",
+    "trace_id_validation": "non_null_required",
+    "output_comparison": "golden_file_compare"
+  }
+}
