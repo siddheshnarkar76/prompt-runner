@@ -1,0 +1,168 @@
+{
+  "version": "2.0.0",
+  "name": "Prompt Runner Contract",
+  "description": "Formal input/output contract for Prompt Runner pipeline",
+  "metadata": {
+    "generated_at": "2026-01-15",
+    "platform": "BHIV AI Platform Integration",
+    "consumers": ["AI Content Platform", "TTS/TTV Pipeline", "InsightFlow Analytics"]
+  },
+  "pipeline": {
+    "entry_point": "/orchestrate/run",
+    "input_schema": {
+      "type": "object",
+      "required": ["prompt", "city"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "User design intent (natural language)"
+        },
+        "city": {
+          "type": "string",
+          "enum": ["Mumbai", "Pune", "Ahmedabad", "Nashik"],
+          "description": "Target city for compliance rules"
+        },
+        "session_id": {
+          "type": "string",
+          "description": "Optional session ID for traceability"
+        },
+        "trace_id": {
+          "type": "string",
+          "description": "Platform-provided distributed trace ID (optional, adapter generates if omitted)"
+        }
+      }
+    },
+    "output_schema": {
+      "type": "object",
+      "required": ["success", "trace_id", "case_id", "compliance_status", "geometry"],
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Overall execution success"
+        },
+        "trace_id": {
+          "type": "string",
+          "description": "Unique distributed trace ID (never null)"
+        },
+        "case_id": {
+          "type": "string",
+          "description": "Case identifier for this run"
+        },
+        "prompt": {
+          "type": "string",
+          "description": "Original user prompt"
+        },
+        "city": {
+          "type": "string",
+          "description": "City of compliance check"
+        },
+        "spec": {
+          "type": "object",
+          "description": "Parsed building specification",
+          "properties": {
+            "height_m": { "type": ["number", "null"] },
+            "width_m": { "type": ["number", "null"] },
+            "depth_m": { "type": ["number", "null"] },
+            "fsi": { "type": ["number", "null"] },
+            "building_type": { "type": "string" }
+          }
+        },
+        "compliance_status": {
+          "type": "object",
+          "description": "Compliance check results",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["compliant", "non_compliant", "partial"]
+            },
+            "rules_evaluated": { "type": "integer" },
+            "rules_passed": { "type": "integer" },
+            "rules_failed": { "type": "integer" },
+            "evaluations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": { "type": "string" },
+                  "rule_name": { "type": "string" },
+                  "passed": { "type": "boolean" },
+                  "details": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "geometry": {
+          "type": "object",
+          "description": "3D geometry output",
+          "properties": {
+            "generated": { "type": "boolean" },
+            "path": { "type": ["string", "null"] },
+            "format": { "type": "string", "enum": ["glb", "gltf"] }
+          }
+        },
+        "telemetry": {
+          "type": "object",
+          "description": "Execution telemetry",
+          "properties": {
+            "event_type": { "type": "string" },
+            "timestamp": { "type": "string", "format": "date-time" },
+            "duration_ms": { "type": "number" },
+            "agent_versions": { "type": "object" }
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "agent": { "type": "string" },
+              "code": { "type": "string" },
+              "message": { "type": "string" },
+              "severity": { "type": "string", "enum": ["warning", "error"] }
+            }
+          }
+        }
+      }
+    },
+    "error_response": {
+      "type": "object",
+      "required": ["success", "trace_id", "error"],
+      "properties": {
+        "success": { "type": "boolean", "enum": [false] },
+        "trace_id": { "type": "string" },
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": { "type": "string" },
+            "message": { "type": "string" },
+            "agent": { "type": "string" },
+            "timestamp": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "consumers": {
+    "AI_Content_Platform": {
+      "endpoint": "/orchestrate/run",
+      "method": "POST",
+      "use_case": "Submit design prompt, get compliance check + geometry"
+    },
+    "TTS_TTV_Pipeline": {
+      "endpoint": "/api/mcp/geometry/{case_id}",
+      "method": "GET",
+      "use_case": "Pull .glb files for 3D processing"
+    },
+    "InsightFlow_Telemetry": {
+      "endpoint": "/api/mcp/feedback",
+      "method": "POST",
+      "use_case": "Submit feedback (1/-1) for RL training"
+    }
+  },
+  "versioning": {
+    "strategy": "semantic",
+    "per_agent": true,
+    "breaking_changes_require": "version bump + migration guide"
+  }
+}

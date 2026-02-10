@@ -1,0 +1,4072 @@
+[
+  {
+    "case_id": "20260126080529",
+    "event": "prompt_submitted",
+    "prompt": "gghj",
+    "output": {
+      "case_id": "9915132b",
+      "trace_id": "e5b94d25-6349-4675-baa5-beb0e92d2fd8",
+      "run_id": "9915132b",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "gghj",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-26T08:05:29.970153Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260126080529.json",
+    "run_id": "run_24dac8b042",
+    "trace_id": "run_24dac8b042",
+    "timestamp": "2026-01-26T08:05:29.979627Z"
+  },
+  {
+    "case_id": "20260126080529",
+    "event": "prompt_submitted",
+    "prompt": "gghj",
+    "output": {
+      "case_id": "9915132b",
+      "trace_id": "e5b94d25-6349-4675-baa5-beb0e92d2fd8",
+      "run_id": "9915132b",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "gghj",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-26T08:05:29.970153Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260126080529.json",
+    "run_id": "run_60068c9258",
+    "trace_id": "run_60068c9258",
+    "timestamp": "2026-01-26T08:05:29.984739Z"
+  },
+  {
+    "case_id": "20260127084634",
+    "event": "prompt_submitted",
+    "prompt": "make a building",
+    "output": {
+      "case_id": "4ac1ceb2",
+      "trace_id": "d9533adc-634b-4304-85b6-baccdeb10114",
+      "run_id": "4ac1ceb2",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "make a building",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-27T08:46:34.813411Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260127084634.json",
+    "run_id": "run_10c19d5764",
+    "trace_id": "run_10c19d5764",
+    "timestamp": "2026-01-27T08:46:34.860031Z"
+  },
+  {
+    "case_id": "20260127084634",
+    "event": "prompt_submitted",
+    "prompt": "make a building",
+    "output": {
+      "case_id": "4ac1ceb2",
+      "trace_id": "d9533adc-634b-4304-85b6-baccdeb10114",
+      "run_id": "4ac1ceb2",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "make a building",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-27T08:46:34.813411Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260127084634.json",
+    "run_id": "run_9897e59b68",
+    "trace_id": "run_9897e59b68",
+    "timestamp": "2026-01-27T08:46:34.876032Z"
+  },
+  {
+    "case_id": "20260127084803",
+    "event": "prompt_submitted",
+    "prompt": "i have a plot size 100sq can u tell me that i can make a house on it ",
+    "output": {
+      "case_id": "1ad17671",
+      "trace_id": "d9533adc-634b-4304-85b6-baccdeb10114",
+      "run_id": "1ad17671",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "i have a plot size 100sq can u tell me that i can make a house on it ",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-27T08:48:03.555104Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260127084803.json",
+    "run_id": "run_82b97a4b93",
+    "trace_id": "run_82b97a4b93",
+    "timestamp": "2026-01-27T08:48:03.723612Z"
+  },
+  {
+    "case_id": "20260127084803",
+    "event": "prompt_submitted",
+    "prompt": "i have a plot size 100sq can u tell me that i can make a house on it ",
+    "output": {
+      "case_id": "1ad17671",
+      "trace_id": "d9533adc-634b-4304-85b6-baccdeb10114",
+      "run_id": "1ad17671",
+      "city": "Mumbai",
+      "land_use_zone": null,
+      "plot_area_sq_m": null,
+      "plot_width_m": null,
+      "plot_frontage_m": null,
+      "abutting_road_width_m": null,
+      "building_use": null,
+      "building_type": null,
+      "is_core_area": null,
+      "height_m": null,
+      "fsi": null,
+      "setback_m": null,
+      "width_m": null,
+      "depth_m": null,
+      "type": "building_specification",
+      "description": "i have a plot size 100sq can u tell me that i can make a house on it ",
+      "meta": {
+        "generated_by": "design_agent_v3",
+        "generated_at": "2026-01-27T08:48:03.555104Z",
+        "confidence": 0.9
+      }
+    },
+    "spec_filename": "20260127084803.json",
+    "run_id": "run_b1294b4e8b",
+    "trace_id": "run_b1294b4e8b",
+    "timestamp": "2026-01-27T08:48:03.734043Z"
+  },
+  {
+    "case_id": "spec_18b3c8b384cc",
+    "event": "prompt_submitted",
+    "prompt": "\"Design a modern 2BHK residential apartment with open kitchen and balcony in Mumbai\"",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_18b3c8b384cc.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_18b3c8b384cc",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_18b3c8b384cc.glb"
+    },
+    "run_id": "run_e6bc71df9e",
+    "trace_id": "run_e6bc71df9e",
+    "timestamp": "2026-01-30T09:29:10.263943Z"
+  },
+  {
+    "case_id": "spec_18b3c8b384cc",
+    "event": "prompt_submitted",
+    "prompt": "\"Design a modern 2BHK residential apartment with open kitchen and balcony in Mumbai\"",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_18b3c8b384cc.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_18b3c8b384cc",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_18b3c8b384cc.glb"
+    },
+    "run_id": "run_10b2c646e3",
+    "trace_id": "run_10b2c646e3",
+    "timestamp": "2026-01-30T09:29:10.306250Z"
+  },
+  {
+    "case_id": "spec_9fb9ade8e622",
+    "event": "prompt_submitted",
+    "prompt": "give me ideas for apartment in mumbai on 10000sq land ",
+    "output": {
+      "objects": [
+        {
+          "id": "base_structure",
+          "type": "structure",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 10,
+            "length": 10,
+            "height": 3
+          }
+        }
+      ],
+      "design_type": "generic",
+      "style": "modern",
+      "dimensions": {
+        "width": 10,
+        "length": 10,
+        "height": 3
+      },
+      "estimated_cost": {
+        "total": 2000000.0,
+        "currency": "INR"
+      },
+      "metadata": {
+        "estimated_cost": 2000000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9fb9ade8e622.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9fb9ade8e622",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9fb9ade8e622.glb"
+    },
+    "run_id": "run_baff04d49a",
+    "trace_id": "run_baff04d49a",
+    "timestamp": "2026-01-30T09:36:10.903356Z"
+  },
+  {
+    "case_id": "spec_9fb9ade8e622",
+    "event": "prompt_submitted",
+    "prompt": "give me ideas for apartment in mumbai on 10000sq land ",
+    "output": {
+      "objects": [
+        {
+          "id": "base_structure",
+          "type": "structure",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 10,
+            "length": 10,
+            "height": 3
+          }
+        }
+      ],
+      "design_type": "generic",
+      "style": "modern",
+      "dimensions": {
+        "width": 10,
+        "length": 10,
+        "height": 3
+      },
+      "estimated_cost": {
+        "total": 2000000.0,
+        "currency": "INR"
+      },
+      "metadata": {
+        "estimated_cost": 2000000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9fb9ade8e622.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9fb9ade8e622",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9fb9ade8e622.glb"
+    },
+    "run_id": "run_a41a88c505",
+    "trace_id": "run_a41a88c505",
+    "timestamp": "2026-01-30T09:36:10.935636Z"
+  },
+  {
+    "case_id": "mumbai_case_b5b02af0",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "case_id": "3a0ec01b",
+      "city": "Mumbai",
+      "land_use_zone": "Commercial",
+      "plot_area_sq_m": 100.0,
+      "plot_frontage_m": 100.0,
+      "abutting_road_width_m": 50.0,
+      "building_use": "commercial",
+      "building_type": "apartment",
+      "is_core_area": false,
+      "height_m": 20.0,
+      "setback_m": 20.0,
+      "fsi": 1.8
+    },
+    "status": "UNKNOWN",
+    "output": {
+      "project_id": "unknown_project",
+      "case_id": "mumbai_case_b5b02af0",
+      "city": "Mumbai",
+      "parameters": {},
+      "rules_applied": [
+        "MUM-FSI-URBAN-R15-20",
+        "MUM-SETBACK-R15-20",
+        "MUM-HEIGHT-STANDARD"
+      ],
+      "reasoning": "Mock compliance analysis for Mumbai project. This is a fallback response when the external compliance service is unavailable. For detailed analysis, please ensure the external service is accessible.",
+      "clause_summaries": [
+        {
+          "clause_id": "MUM-FSI-URBAN-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-SETBACK-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-HEIGHT-STANDARD",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        }
+      ],
+      "confidence_score": 0.3,
+      "confidence_level": "Low",
+      "confidence_note": "Mock response - external compliance service unavailable",
+      "basic_reasoning": "Fallback compliance analysis for Mumbai project with mock regulations."
+    },
+    "run_id": "run_68c0d365a9",
+    "trace_id": "run_68c0d365a9",
+    "timestamp": "2026-01-30T15:44:27.423069Z"
+  },
+  {
+    "case_id": "mumbai_case_b5b02af0",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "case_id": "3a0ec01b",
+      "city": "Mumbai",
+      "land_use_zone": "Commercial",
+      "plot_area_sq_m": 100.0,
+      "plot_frontage_m": 100.0,
+      "abutting_road_width_m": 50.0,
+      "building_use": "commercial",
+      "building_type": "apartment",
+      "is_core_area": false,
+      "height_m": 20.0,
+      "setback_m": 20.0,
+      "fsi": 1.8
+    },
+    "status": "UNKNOWN",
+    "output": {
+      "project_id": "unknown_project",
+      "case_id": "mumbai_case_b5b02af0",
+      "city": "Mumbai",
+      "parameters": {},
+      "rules_applied": [
+        "MUM-FSI-URBAN-R15-20",
+        "MUM-SETBACK-R15-20",
+        "MUM-HEIGHT-STANDARD"
+      ],
+      "reasoning": "Mock compliance analysis for Mumbai project. This is a fallback response when the external compliance service is unavailable. For detailed analysis, please ensure the external service is accessible.",
+      "clause_summaries": [
+        {
+          "clause_id": "MUM-FSI-URBAN-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-SETBACK-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-HEIGHT-STANDARD",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        }
+      ],
+      "confidence_score": 0.3,
+      "confidence_level": "Low",
+      "confidence_note": "Mock response - external compliance service unavailable",
+      "basic_reasoning": "Fallback compliance analysis for Mumbai project with mock regulations."
+    },
+    "run_id": "run_816150fe5d",
+    "trace_id": "run_816150fe5d",
+    "timestamp": "2026-01-30T15:44:27.439658Z"
+  },
+  {
+    "case_id": "mumbai_case_38ae1b2a",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "case_id": "02d4e50a",
+      "city": "Mumbai",
+      "land_use_zone": "R2",
+      "plot_area_sq_m": 5000.0,
+      "plot_frontage_m": 50.0,
+      "abutting_road_width_m": 30.0,
+      "building_use": "residential",
+      "building_type": "apartment",
+      "is_core_area": false,
+      "height_m": 30.0,
+      "setback_m": 5.0,
+      "fsi": 3.5
+    },
+    "status": "UNKNOWN",
+    "output": {
+      "project_id": "unknown_project",
+      "case_id": "mumbai_case_38ae1b2a",
+      "city": "Mumbai",
+      "parameters": {},
+      "rules_applied": [
+        "MUM-FSI-URBAN-R15-20",
+        "MUM-SETBACK-R15-20",
+        "MUM-HEIGHT-STANDARD"
+      ],
+      "reasoning": "Mock compliance analysis for Mumbai project. This is a fallback response when the external compliance service is unavailable. For detailed analysis, please ensure the external service is accessible.",
+      "clause_summaries": [
+        {
+          "clause_id": "MUM-FSI-URBAN-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-SETBACK-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-HEIGHT-STANDARD",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        }
+      ],
+      "confidence_score": 0.3,
+      "confidence_level": "Low",
+      "confidence_note": "Mock response - external compliance service unavailable",
+      "basic_reasoning": "Fallback compliance analysis for Mumbai project with mock regulations."
+    },
+    "run_id": "run_d688a42349",
+    "trace_id": "run_d688a42349",
+    "timestamp": "2026-01-30T15:50:05.217320Z"
+  },
+  {
+    "case_id": "mumbai_case_38ae1b2a",
+    "event": "compliance_check",
+    "city": "Mumbai",
+    "subject": {
+      "case_id": "02d4e50a",
+      "city": "Mumbai",
+      "land_use_zone": "R2",
+      "plot_area_sq_m": 5000.0,
+      "plot_frontage_m": 50.0,
+      "abutting_road_width_m": 30.0,
+      "building_use": "residential",
+      "building_type": "apartment",
+      "is_core_area": false,
+      "height_m": 30.0,
+      "setback_m": 5.0,
+      "fsi": 3.5
+    },
+    "status": "UNKNOWN",
+    "output": {
+      "project_id": "unknown_project",
+      "case_id": "mumbai_case_38ae1b2a",
+      "city": "Mumbai",
+      "parameters": {},
+      "rules_applied": [
+        "MUM-FSI-URBAN-R15-20",
+        "MUM-SETBACK-R15-20",
+        "MUM-HEIGHT-STANDARD"
+      ],
+      "reasoning": "Mock compliance analysis for Mumbai project. This is a fallback response when the external compliance service is unavailable. For detailed analysis, please ensure the external service is accessible.",
+      "clause_summaries": [
+        {
+          "clause_id": "MUM-FSI-URBAN-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-SETBACK-R15-20",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        },
+        {
+          "clause_id": "MUM-HEIGHT-STANDARD",
+          "authority": "Mumbai Municipal Corporation",
+          "notes": "Mock rule for Mumbai compliance",
+          "quick_summary": "Fallback compliance check"
+        }
+      ],
+      "confidence_score": 0.3,
+      "confidence_level": "Low",
+      "confidence_note": "Mock response - external compliance service unavailable",
+      "basic_reasoning": "Fallback compliance analysis for Mumbai project with mock regulations."
+    },
+    "run_id": "run_355a5cfd62",
+    "trace_id": "run_355a5cfd62",
+    "timestamp": "2026-01-30T15:50:05.239215Z"
+  },
+  {
+    "case_id": "spec_c12f8edcdc8d",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panels",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_c12f8edcdc8d.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_c12f8edcdc8d",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_c12f8edcdc8d.glb"
+    },
+    "run_id": "run_217169bf6f",
+    "trace_id": "run_217169bf6f",
+    "timestamp": "2026-01-31T14:55:24.784378Z"
+  },
+  {
+    "case_id": "spec_c12f8edcdc8d",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panels",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_c12f8edcdc8d.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_c12f8edcdc8d",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_c12f8edcdc8d.glb"
+    },
+    "run_id": "run_ef1375c6c9",
+    "trace_id": "run_ef1375c6c9",
+    "timestamp": "2026-01-31T14:55:24.792455Z"
+  },
+  {
+    "case_id": "spec_edf234225e21",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panel",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_edf234225e21.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_edf234225e21",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_edf234225e21.glb"
+    },
+    "run_id": "run_691709ef2b",
+    "trace_id": "run_691709ef2b",
+    "timestamp": "2026-01-31T15:05:15.830046Z"
+  },
+  {
+    "case_id": "spec_edf234225e21",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panel",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_edf234225e21.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_edf234225e21",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_edf234225e21.glb"
+    },
+    "run_id": "run_64d0a9c775",
+    "trace_id": "run_64d0a9c775",
+    "timestamp": "2026-01-31T15:05:15.859709Z"
+  },
+  {
+    "case_id": "spec_bc14ac4aac0c",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panels",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_bc14ac4aac0c.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_bc14ac4aac0c",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_bc14ac4aac0c.glb"
+    },
+    "run_id": "run_c496b6304d",
+    "trace_id": "run_c496b6304d",
+    "timestamp": "2026-01-31T15:10:37.542083Z"
+  },
+  {
+    "case_id": "spec_bc14ac4aac0c",
+    "event": "prompt_submitted",
+    "prompt": "Modern 5-story residential building with 50 units, green roof, solar panels",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_bc14ac4aac0c.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_bc14ac4aac0c",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_bc14ac4aac0c.glb"
+    },
+    "run_id": "run_fa90bebdab",
+    "trace_id": "run_fa90bebdab",
+    "timestamp": "2026-01-31T15:10:37.590098Z"
+  },
+  {
+    "case_id": "spec_8a6515d6c916",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_8a6515d6c916.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_8a6515d6c916",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_8a6515d6c916.glb"
+    },
+    "run_id": "run_6163e90759",
+    "trace_id": "run_6163e90759",
+    "timestamp": "2026-01-31T17:39:24.019562Z"
+  },
+  {
+    "case_id": "spec_8a6515d6c916",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_8a6515d6c916.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_8a6515d6c916",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_8a6515d6c916.glb"
+    },
+    "run_id": "run_0612b856ed",
+    "trace_id": "run_0612b856ed",
+    "timestamp": "2026-01-31T17:39:24.058226Z"
+  },
+  {
+    "case_id": "spec_b42c4e0958de",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_b42c4e0958de.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_b42c4e0958de",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_b42c4e0958de.glb"
+    },
+    "run_id": "run_f5d29c06c4",
+    "trace_id": "run_f5d29c06c4",
+    "timestamp": "2026-01-31T17:50:30.782913Z"
+  },
+  {
+    "case_id": "spec_b42c4e0958de",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_b42c4e0958de.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_b42c4e0958de",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_b42c4e0958de.glb"
+    },
+    "run_id": "run_be9d690a1b",
+    "trace_id": "run_be9d690a1b",
+    "timestamp": "2026-01-31T17:50:30.819914Z"
+  },
+  {
+    "case_id": "spec_66647a97ddc9",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_66647a97ddc9.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_66647a97ddc9",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_66647a97ddc9.glb"
+    },
+    "run_id": "run_b200bdcdfa",
+    "trace_id": "run_b200bdcdfa",
+    "timestamp": "2026-01-31T17:55:52.261584Z"
+  },
+  {
+    "case_id": "spec_66647a97ddc9",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_66647a97ddc9.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_66647a97ddc9",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_66647a97ddc9.glb"
+    },
+    "run_id": "run_012d7ed044",
+    "trace_id": "run_012d7ed044",
+    "timestamp": "2026-01-31T17:55:52.310232Z"
+  },
+  {
+    "case_id": "spec_316fc275d309",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_316fc275d309.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_316fc275d309",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_316fc275d309.glb"
+    },
+    "run_id": "run_7c37094556",
+    "trace_id": "run_7c37094556",
+    "timestamp": "2026-02-01T08:11:36.336400Z"
+  },
+  {
+    "case_id": "spec_316fc275d309",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_316fc275d309.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_316fc275d309",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_316fc275d309.glb"
+    },
+    "run_id": "run_cbf289c142",
+    "trace_id": "run_cbf289c142",
+    "timestamp": "2026-02-01T08:11:36.400309Z"
+  },
+  {
+    "case_id": "spec_828d55ecdd4f",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_828d55ecdd4f.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_828d55ecdd4f",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_828d55ecdd4f.glb"
+    },
+    "run_id": "run_a94148be0a",
+    "trace_id": "run_a94148be0a",
+    "timestamp": "2026-02-02T04:33:35.868210Z"
+  },
+  {
+    "case_id": "spec_828d55ecdd4f",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen. Total area 2000 sq ft. Modern style with large windows.",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_828d55ecdd4f.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_828d55ecdd4f",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_828d55ecdd4f.glb"
+    },
+    "run_id": "run_b13066b266",
+    "trace_id": "run_b13066b266",
+    "timestamp": "2026-02-02T04:33:35.934922Z"
+  },
+  {
+    "case_id": "spec_210fecd483bb",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_210fecd483bb.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_210fecd483bb",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_210fecd483bb.glb"
+    },
+    "run_id": "run_26e3f4f391",
+    "trace_id": "run_26e3f4f391",
+    "timestamp": "2026-02-02T04:56:58.759955Z"
+  },
+  {
+    "case_id": "spec_210fecd483bb",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_210fecd483bb.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_210fecd483bb",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_210fecd483bb.glb"
+    },
+    "run_id": "run_762ebf650f",
+    "trace_id": "run_762ebf650f",
+    "timestamp": "2026-02-02T04:56:58.811316Z"
+  },
+  {
+    "case_id": "spec_3e4a9984a52e",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_3e4a9984a52e.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_3e4a9984a52e",
+      "city": "Pune",
+      "preview_url": "http://localhost:8000/static/geometry/spec_3e4a9984a52e.glb"
+    },
+    "run_id": "run_f87addee83",
+    "trace_id": "run_f87addee83",
+    "timestamp": "2026-02-02T04:57:54.847993Z"
+  },
+  {
+    "case_id": "spec_3e4a9984a52e",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room, and kitchen",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_3e4a9984a52e.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_3e4a9984a52e",
+      "city": "Pune",
+      "preview_url": "http://localhost:8000/static/geometry/spec_3e4a9984a52e.glb"
+    },
+    "run_id": "run_cf12aa721f",
+    "trace_id": "run_cf12aa721f",
+    "timestamp": "2026-02-02T04:57:54.911899Z"
+  },
+  {
+    "case_id": "spec_5bcf14d89270",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_5bcf14d89270.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_5bcf14d89270",
+      "city": "Nashik",
+      "preview_url": "http://localhost:8000/static/geometry/spec_5bcf14d89270.glb"
+    },
+    "run_id": "run_e3c655f571",
+    "trace_id": "run_e3c655f571",
+    "timestamp": "2026-02-02T05:12:50.372951Z"
+  },
+  {
+    "case_id": "spec_5bcf14d89270",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_5bcf14d89270.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_5bcf14d89270",
+      "city": "Nashik",
+      "preview_url": "http://localhost:8000/static/geometry/spec_5bcf14d89270.glb"
+    },
+    "run_id": "run_b61a6bcdfa",
+    "trace_id": "run_b61a6bcdfa",
+    "timestamp": "2026-02-02T05:12:50.416999Z"
+  },
+  {
+    "case_id": "spec_573e376cdf1f",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_573e376cdf1f.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_573e376cdf1f",
+      "city": "Pune",
+      "preview_url": "http://localhost:8000/static/geometry/spec_573e376cdf1f.glb"
+    },
+    "run_id": "run_a09d831a4c",
+    "trace_id": "run_a09d831a4c",
+    "timestamp": "2026-02-02T05:30:39.668904Z"
+  },
+  {
+    "case_id": "spec_573e376cdf1f",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_573e376cdf1f.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_573e376cdf1f",
+      "city": "Pune",
+      "preview_url": "http://localhost:8000/static/geometry/spec_573e376cdf1f.glb"
+    },
+    "run_id": "run_34c4d53648",
+    "trace_id": "run_34c4d53648",
+    "timestamp": "2026-02-02T05:30:39.815489Z"
+  },
+  {
+    "case_id": "spec_17130ffd0dae",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_17130ffd0dae.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_17130ffd0dae",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_17130ffd0dae.glb"
+    },
+    "run_id": "run_f61b521058",
+    "trace_id": "run_f61b521058",
+    "timestamp": "2026-02-02T05:38:33.572777Z"
+  },
+  {
+    "case_id": "spec_17130ffd0dae",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_17130ffd0dae.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_17130ffd0dae",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_17130ffd0dae.glb"
+    },
+    "run_id": "run_8ccc6cd825",
+    "trace_id": "run_8ccc6cd825",
+    "timestamp": "2026-02-02T05:38:33.619367Z"
+  },
+  {
+    "case_id": "spec_9b168ce6a26a",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9b168ce6a26a.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9b168ce6a26a",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9b168ce6a26a.glb"
+    },
+    "run_id": "run_98c1ebb09b",
+    "trace_id": "run_98c1ebb09b",
+    "timestamp": "2026-02-02T05:39:51.764745Z"
+  },
+  {
+    "case_id": "spec_9b168ce6a26a",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room , 2 bedroom and kitchen in 1200sq ft",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 6.096,
+            "length": 8.5344,
+            "height": 2.4384
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 8.096,
+            "length": 10.5344,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 6.096,
+        "length": 8.5344,
+        "height": 4.8768
+      },
+      "estimated_cost": {
+        "total": 4151928.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 4151928.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9b168ce6a26a.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9b168ce6a26a",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9b168ce6a26a.glb"
+    },
+    "run_id": "run_10ec7646ee",
+    "trace_id": "run_10ec7646ee",
+    "timestamp": "2026-02-02T05:39:51.846004Z"
+  },
+  {
+    "case_id": "spec_514285975e1e",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_514285975e1e.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_514285975e1e",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_514285975e1e.glb"
+    },
+    "run_id": "run_4c5b90ef7d",
+    "trace_id": "run_4c5b90ef7d",
+    "timestamp": "2026-02-02T05:40:52.364699Z"
+  },
+  {
+    "case_id": "spec_9bd5f616a275",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9bd5f616a275.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9bd5f616a275",
+      "city": "Ahmedabad",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9bd5f616a275.glb"
+    },
+    "run_id": "run_c5ae472745",
+    "trace_id": "run_c5ae472745",
+    "timestamp": "2026-02-02T05:40:58.950529Z"
+  },
+  {
+    "case_id": "spec_514285975e1e",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_514285975e1e.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_514285975e1e",
+      "city": "Mumbai",
+      "preview_url": "http://localhost:8000/static/geometry/spec_514285975e1e.glb"
+    },
+    "run_id": "run_39ac65ea05",
+    "trace_id": "run_39ac65ea05",
+    "timestamp": "2026-02-02T05:40:52.449651Z"
+  },
+  {
+    "case_id": "spec_9bd5f616a275",
+    "event": "prompt_submitted",
+    "prompt": "Create a 2-story residential building with 4 bedrooms, living room ",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 2,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 16
+      },
+      "estimated_cost": {
+        "total": 42250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 42250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_9bd5f616a275.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_9bd5f616a275",
+      "city": "Ahmedabad",
+      "preview_url": "http://localhost:8000/static/geometry/spec_9bd5f616a275.glb"
+    },
+    "run_id": "run_3359e9cf41",
+    "trace_id": "run_3359e9cf41",
+    "timestamp": "2026-02-02T05:40:59.214825Z"
+  },
+  {
+    "case_id": "spec_1838285323f8",
+    "event": "prompt_submitted",
+    "prompt": "Create a luxury house with \u20b93 crore budget",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_1838285323f8.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_1838285323f8",
+      "city": "Ahmedabad",
+      "preview_url": "http://localhost:8000/static/geometry/spec_1838285323f8.glb"
+    },
+    "run_id": "run_42e4e3cb9c",
+    "trace_id": "run_42e4e3cb9c",
+    "timestamp": "2026-02-02T06:10:44.251551Z"
+  },
+  {
+    "case_id": "spec_1838285323f8",
+    "event": "prompt_submitted",
+    "prompt": "Create a luxury house with \u20b93 crore budget",
+    "output": {
+      "objects": [
+        {
+          "id": "foundation",
+          "type": "foundation",
+          "material": "concrete",
+          "color_hex": "#808080",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exterior_walls",
+          "type": "wall",
+          "subtype": "exterior",
+          "material": "siding",
+          "color_hex": "#D2B48C",
+          "dimensions": {
+            "width": 20,
+            "length": 28,
+            "height": 8
+          }
+        },
+        {
+          "id": "roof",
+          "type": "roof",
+          "material": "shingle_asphalt",
+          "color_hex": "#2F4F4F",
+          "dimensions": {
+            "width": 22,
+            "length": 30,
+            "height": 3
+          }
+        },
+        {
+          "id": "front_door",
+          "type": "door",
+          "subtype": "entrance",
+          "material": "wood_oak",
+          "color_hex": "#8B4513",
+          "dimensions": {
+            "width": 1,
+            "height": 2.1
+          }
+        },
+        {
+          "id": "windows",
+          "type": "window",
+          "material": "glass_double_pane",
+          "color_hex": "#87CEEB",
+          "count": 8,
+          "dimensions": {
+            "width": 1.2,
+            "height": 1.5
+          }
+        }
+      ],
+      "design_type": "house",
+      "style": "modern",
+      "stories": 1,
+      "dimensions": {
+        "width": 20,
+        "length": 28,
+        "height": 8
+      },
+      "estimated_cost": {
+        "total": 21250000.0,
+        "currency": "INR"
+      },
+      "tech_stack": [
+        "Local GPU"
+      ],
+      "model_used": "local-rtx-3060",
+      "metadata": {
+        "estimated_cost": 21250000.0,
+        "currency": "INR",
+        "generation_provider": "local",
+        "city": "Mumbai",
+        "style": "modern"
+      }
+    },
+    "spec_filename": "spec_1838285323f8.json",
+    "prompt_to_json": {
+      "enabled": true,
+      "spec_id": "spec_1838285323f8",
+      "city": "Ahmedabad",
+      "preview_url": "http://localhost:8000/static/geometry/spec_1838285323f8.glb"
+    },
+    "run_id": "run_bfc9a96169",
+    "trace_id": "run_bfc9a96169",
+    "timestamp": "2026-02-02T06:10:44.350722Z"
+  }
+]

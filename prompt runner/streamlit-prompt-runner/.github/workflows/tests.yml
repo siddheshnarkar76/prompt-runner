@@ -1,0 +1,140 @@
+name: CI - Tests & Determinism Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+        python-version: [ "3.11" ]
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest-asyncio
+    
+    - name: Run pytest (offline mode)
+      env:
+        USE_MOCK_MONGO: "1"
+      run: |
+        python -m pytest tests/ -v --tb=short -q --disable-warnings
+    
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results-${{ matrix.os }}-${{ matrix.python-version }}
+        path: |
+          reports/test_run_complete.log
+          reports/insightflow_logs.json
+          reports/health_status.json
+    
+    - name: Check health endpoint
+      run: |
+        python -c "
+import json
+from pathlib import Path
+health_file = Path('reports/health_status.json')
+if health_file.exists():
+    with open(health_file) as f:
+        logs = json.load(f)
+    print(f'✓ Health checks: {len(logs)} entries logged')
+    if logs:
+        latest = logs[-1]
+        print(f'  Latest status: {latest.get(\"status\")}')
+else:
+    print('⚠ Health file not found')
+"
+    
+    - name: Verify telemetry (trace_id non-null)
+      run: |
+        python -c "
+import json
+from pathlib import Path
+insightflow_file = Path('reports/insightflow_logs.json')
+if insightflow_file.exists():
+    with open(insightflow_file) as f:
+        events = json.load(f)
+    null_trace_ids = [e for e in events if e.get('trace_id') is None]
+    if null_trace_ids:
+        print(f'⚠ WARNING: {len(null_trace_ids)} events with null trace_id')
+        exit(1)
+    else:
+        print(f'✓ All {len(events)} telemetry events have valid trace_id')
+else:
+    print('ℹ No InsightFlow telemetry file found (tests may not have generated it)')
+"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Install lint tools
+      run: |
+        pip install flake8
+    
+    - name: Lint with flake8 (non-blocking)
+      run: |
+        flake8 agents/ api/ utils/ --count --select=E9,F63,F7,F82 --show-source --statistics || true
+
+  integration-readiness:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Verify Integration Readiness
+      run: |
+        python -c "
+import json
+from pathlib import Path
+
+print('╔════════════════════════════════════════╗')
+print('║  INTEGRATION READINESS VERIFICATION    ║')
+print('╚════════════════════════════════════════╝')
+
+checks = {
+    'INTERFACE.md': Path('INTERFACE.md').exists(),
+    'INTEGRATION_READINESS.md': Path('INTEGRATION_READINESS.md').exists(),
+    'Health endpoint (api/health.py)': Path('api/health.py').exists(),
+    'Telemetry (utils/insightflow.py)': Path('utils/insightflow.py').exists(),
+    'CI workflow (.github/workflows)': any(Path('.github/workflows').glob('*.yml')),
+}
+
+passed = sum(1 for v in checks.values() if v)
+total = len(checks)
+
+for check, result in checks.items():
+    status = '✓' if result else '✗'
+    print(f'{status} {check}')
+
+print(f'\n{passed}/{total} checks passed')
+
+if passed == total:
+    print('\n🎉 PLUG-READY: All deliverables present')
+    exit(0)
+else:
+    print(f'\n⚠ {total - passed} deliverable(s) still pending')
+    exit(1)
+"

@@ -1,0 +1,82 @@
+[
+  {
+    "status": "active",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": 85,
+    "integration_ready": true,
+    "last_run": "2025-12-02T08:00:00Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2026-01-19T09:10:01.672330Z"
+  },
+  {
+    "status": "degraded",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": 45,
+    "integration_ready": false,
+    "last_run": "never",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2026-01-19T09:10:21.053014Z"
+  },
+  {
+    "status": "active",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": 82,
+    "integration_ready": true,
+    "last_run": "2026-01-19T07:36:33.809396Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2026-01-19T09:12:40.611789Z"
+  },
+  {
+    "status": "active",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": 82,
+    "integration_ready": true,
+    "last_run": "2026-01-19T07:36:33.809396Z",
+    "dependencies": {
+      "mongo": {
+        "ok": true,
+        "error": null
+      },
+      "noopur": {
+        "enabled": false,
+        "ok": null,
+        "error": null
+      }
+    },
+    "checked_at": "2026-01-19T09:14:00.156285Z"
+  }
+]

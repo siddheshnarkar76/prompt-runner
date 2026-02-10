@@ -1,0 +1,1103 @@
+[
+  {
+    "timestamp": "2026-01-19T07:36:33.530911Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2026-01-19T07:36:33.530911Z",
+      "metadata": {
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.537817Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2026-01-19T07:36:33.536923Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.568057Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2026-01-19T07:36:33.568057Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.595478Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": 1,
+      "timestamp": "2026-01-19T07:36:33.595478Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.624995Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 201,
+    "payload": {
+      "case_id": "test_case",
+      "feedback": -1,
+      "timestamp": "2026-01-19T07:36:33.624995Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.655397Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.684486Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/status",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:33.720456Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 503,
+    "payload": {
+      "case_id": "test_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      },
+      "timestamp": "2026-01-19T07:36:33.720456Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:36.195119Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:39.085704Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:41.940491Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:44.809440Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2026-01-19T07:36:42.763767Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:46.895633Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2026-01-19T07:36:44.844912Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:48.977502Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2026-01-19T07:36:46.931721Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:51.041249Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2026-01-19T07:36:49.001498Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:53.108847Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2026-01-19T07:36:51.076803Z",
+      "metadata": {
+        "user_id": "user_with_history",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:36:55.212385Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:36:58.113950Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_0",
+      "event": "prompt_processed",
+      "prompt": "Prompt 0",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2026-01-19T07:36:56.038083Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:00.195458Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2026-01-19T07:36:58.147951Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:02.288851Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2026-01-19T07:37:00.219627Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:04.392577Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2026-01-19T07:37:02.326848Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:06.500064Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_4",
+      "event": "prompt_processed",
+      "prompt": "Prompt 4",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2026-01-19T07:37:04.429591Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:08.572288Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_5",
+      "event": "prompt_processed",
+      "prompt": "Prompt 5",
+      "output": {
+        "result": "output 5"
+      },
+      "timestamp": "2026-01-19T07:37:06.527208Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:10.672415Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_6",
+      "event": "prompt_processed",
+      "prompt": "Prompt 6",
+      "output": {
+        "result": "output 6"
+      },
+      "timestamp": "2026-01-19T07:37:08.612033Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:12.763595Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_7",
+      "event": "prompt_processed",
+      "prompt": "Prompt 7",
+      "output": {
+        "result": "output 7"
+      },
+      "timestamp": "2026-01-19T07:37:10.712201Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:14.850331Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_8",
+      "event": "prompt_processed",
+      "prompt": "Prompt 8",
+      "output": {
+        "result": "output 8"
+      },
+      "timestamp": "2026-01-19T07:37:12.801872Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:16.968907Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "limit_case_9",
+      "event": "prompt_processed",
+      "prompt": "Prompt 9",
+      "output": {
+        "result": "output 9"
+      },
+      "timestamp": "2026-01-19T07:37:14.888132Z",
+      "metadata": {
+        "user_id": "user_limit_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:19.065111Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:21.164844Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:24.043475Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_0",
+      "event": "prompt_processed",
+      "prompt": "Old prompt 1",
+      "output": {
+        "result": "output 0"
+      },
+      "timestamp": "2026-01-19T07:37:21.985890Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:26.094017Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_1",
+      "event": "prompt_processed",
+      "prompt": "Old prompt 2",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2026-01-19T07:37:24.078097Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:28.142043Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_2",
+      "event": "prompt_processed",
+      "prompt": "Recent prompt 1",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2026-01-19T07:37:26.119409Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:30.229552Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_3",
+      "event": "prompt_processed",
+      "prompt": "Recent prompt 2",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2026-01-19T07:37:28.173488Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:32.306520Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "recent_case_4",
+      "event": "prompt_processed",
+      "prompt": "Most recent prompt",
+      "output": {
+        "result": "output 4"
+      },
+      "timestamp": "2026-01-19T07:37:30.267548Z",
+      "metadata": {
+        "user_id": "user_recent_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:34.407907Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:37.292584Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "structure_case",
+      "event": "prompt_processed",
+      "prompt": "Test prompt for structure",
+      "output": {
+        "result": "test output"
+      },
+      "timestamp": "2026-01-19T07:37:35.229550Z",
+      "metadata": {
+        "user_id": "user_structure_test",
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:39.391350Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:42.277187Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Build a residential building in Mumbai",
+      "output": {
+        "type": "residential"
+      },
+      "timestamp": "2026-01-19T07:37:40.239787Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:44.331239Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Add a park near the building",
+      "output": {
+        "type": "park"
+      },
+      "timestamp": "2026-01-19T07:37:42.300560Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:46.412241Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Create road access to the park",
+      "output": {
+        "type": "road"
+      },
+      "timestamp": "2026-01-19T07:37:44.358872Z",
+      "metadata": {
+        "user_id": "user_warming_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:48.493676Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:51.373644Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "format_case",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2026-01-19T07:37:49.321725Z",
+      "metadata": {
+        "user_id": "user_format_test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:37:53.440252Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:37:56.330803Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "user1_case",
+      "event": "prompt_processed",
+      "prompt": "User 1 prompt",
+      "output": {
+        "data": "user1"
+      },
+      "timestamp": "2026-01-19T07:37:54.274088Z",
+      "metadata": {
+        "user_id": "user_isolation_1"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:29.713703Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "user2_case",
+      "event": "prompt_processed",
+      "prompt": "User 2 prompt",
+      "output": {
+        "data": "user2"
+      },
+      "timestamp": "2026-01-19T07:37:56.370893Z",
+      "metadata": {
+        "user_id": "user_isolation_2"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:31.808984Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:39:33.909780Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:39:36.760846Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_0",
+      "event": "prompt_processed",
+      "prompt": "Build in Mumbai",
+      "output": {
+        "city": "Mumbai",
+        "result": "planned"
+      },
+      "timestamp": "2026-01-19T07:39:34.731032Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:38.851125Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_1",
+      "event": "prompt_processed",
+      "prompt": "Build in Pune",
+      "output": {
+        "city": "Pune",
+        "result": "planned"
+      },
+      "timestamp": "2026-01-19T07:39:36.818375Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:40.943308Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_2",
+      "event": "prompt_processed",
+      "prompt": "Build in Nashik",
+      "output": {
+        "city": "Nashik",
+        "result": "planned"
+      },
+      "timestamp": "2026-01-19T07:39:38.889737Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Nashik"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:43.044203Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "city_case_3",
+      "event": "prompt_processed",
+      "prompt": "Build in Ahmedabad",
+      "output": {
+        "city": "Ahmedabad",
+        "result": "planned"
+      },
+      "timestamp": "2026-01-19T07:39:40.999624Z",
+      "metadata": {
+        "user_id": "user_multi_city",
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:45.160920Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:39:48.074308Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "prev_run",
+      "event": "prompt_processed",
+      "prompt": "Previous prompt",
+      "output": {
+        "result": "previous output"
+      },
+      "timestamp": "2026-01-19T07:39:46.004807Z",
+      "metadata": {
+        "user_id": "user_next_run",
+        "city": "Mumbai"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:50.205253Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "prev_run",
+      "feedback": 1,
+      "timestamp": "2026-01-19T07:39:48.126439Z",
+      "metadata": {
+        "user_id": "user_next_run"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:39:52.303518Z",
+    "method": "GET",
+    "url": "http://localhost:5001/core/context",
+    "status_code": 200,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-01-19T07:39:52.894642Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 500,
+    "payload": {
+      "case_id": "http_error_test",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2026-01-19T07:39:52.894642Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T07:40:49.253813Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "json_error_test",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2026-01-19T07:40:49.253813Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:14:48.987814Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_001",
+      "event": "prompt_processed",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test output"
+      },
+      "timestamp": "2026-01-19T09:14:46.934827Z",
+      "metadata": {
+        "city": "Mumbai",
+        "user_id": "user_123"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:14:51.877262Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_required_fields",
+      "event": "prompt_processed",
+      "prompt": "Test prompt for required fields",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2026-01-19T09:14:49.818246Z",
+      "metadata": {
+        "city": "Pune"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:14:54.759915Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_timestamp",
+      "event": "prompt_processed",
+      "prompt": "Test",
+      "output": {
+        "data": "test"
+      },
+      "timestamp": "2026-01-19T09:14:52.699490Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:14:57.629038Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_metadata",
+      "event": "prompt_processed",
+      "prompt": "Test with metadata",
+      "output": {
+        "result": "success"
+      },
+      "timestamp": "2026-01-19T09:14:55.586832Z",
+      "metadata": {
+        "city": "Mumbai",
+        "user_id": "user_456",
+        "model": "gpt-4",
+        "source": "streamlit"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:00.516924Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_serialization",
+      "event": "prompt_processed",
+      "prompt": "Complex output test",
+      "output": {
+        "buildings": [
+          {
+            "type": "residential",
+            "floors": 10
+          }
+        ],
+        "roads": [
+          {
+            "type": "highway",
+            "length": 500
+          }
+        ],
+        "city": "Ahmedabad"
+      },
+      "timestamp": "2026-01-19T09:14:58.451747Z",
+      "metadata": {
+        "city": "Ahmedabad"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:03.401233Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_special_chars",
+      "event": "prompt_processed",
+      "prompt": "Test with special chars: 'quotes', \"double\", \n newline, \t tab",
+      "output": {
+        "result": "handled"
+      },
+      "timestamp": "2026-01-19T09:15:01.343826Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:06.299910Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "test_unicode",
+      "event": "prompt_processed",
+      "prompt": "\u092e\u0941\u0902\u092c\u0908 \u0936\u0939\u0930 \u092f\u094b\u091c\u0928\u093e \u092a\u0930\u0940\u0915\u094d\u0937\u0923",
+      "output": {
+        "city": "Mumbai",
+        "result": "unicode handled"
+      },
+      "timestamp": "2026-01-19T09:15:04.234608Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:09.193748Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_1",
+      "event": "prompt_processed",
+      "prompt": "Prompt 1",
+      "output": {
+        "result": "output 1"
+      },
+      "timestamp": "2026-01-19T09:15:07.142250Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:11.316560Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_2",
+      "event": "prompt_processed",
+      "prompt": "Prompt 2",
+      "output": {
+        "result": "output 2"
+      },
+      "timestamp": "2026-01-19T09:15:09.247352Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:13.418785Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/log",
+    "status_code": 200,
+    "payload": {
+      "case_id": "case_3",
+      "event": "prompt_processed",
+      "prompt": "Prompt 3",
+      "output": {
+        "result": "output 3"
+      },
+      "timestamp": "2026-01-19T09:15:11.379563Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:16.308977Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_test_001",
+      "feedback": 1,
+      "timestamp": "2026-01-19T09:15:14.247285Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:19.180862Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_test_002",
+      "feedback": -1,
+      "timestamp": "2026-01-19T09:15:17.129756Z",
+      "prompt": "Test prompt",
+      "output": {
+        "result": "test"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:22.081649Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_test_up",
+      "feedback": 1,
+      "timestamp": "2026-01-19T09:15:20.015389Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:24.213238Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_test_down",
+      "feedback": -1,
+      "timestamp": "2026-01-19T09:15:22.134556Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:27.089202Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_required",
+      "feedback": 1,
+      "timestamp": "2026-01-19T09:15:25.036680Z"
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:29.951066Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_metadata",
+      "feedback": 1,
+      "timestamp": "2026-01-19T09:15:27.911942Z",
+      "metadata": {
+        "city": "Pune",
+        "user_id": "user_789",
+        "legacy_feedback": "up"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-19T09:15:32.802027Z",
+    "method": "POST",
+    "url": "http://localhost:5001/core/feedback",
+    "status_code": 200,
+    "payload": {
+      "case_id": "feedback_reward",
+      "feedback": 1,
+      "timestamp": "2026-01-19T09:15:30.773453Z"
+    }
+  }
+]

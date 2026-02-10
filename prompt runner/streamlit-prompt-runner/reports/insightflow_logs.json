@@ -1,0 +1,263 @@
+[
+  {
+    "event_type": "compliance_check",
+    "trace_id": "156f55c2-366b-4184-a73f-dfae6485c26b",
+    "run_id": "f89a8fdb",
+    "timestamp": "2026-01-19T07:36:31.838325Z",
+    "metadata": {
+      "city": "Mumbai",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "81fcce18-b9b1-4cc2-bdb5-f959ce6191e0",
+    "run_id": "d70bb041",
+    "timestamp": "2026-01-19T07:36:32.010978Z",
+    "metadata": {
+      "city": "Pune",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "7ac99f6c-9d16-44ad-8d3a-8bc8f847f533",
+    "run_id": "feedback_test_123",
+    "timestamp": "2026-01-19T07:36:32.048189Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "8d665731-9ed0-4466-b9e3-0b7c0b685d48",
+    "run_id": "feedback_neg_123",
+    "timestamp": "2026-01-19T07:36:32.104193Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": -1
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "fabfdfa9-86b8-42b2-913a-b84025a57da9",
+    "run_id": "474c3737",
+    "timestamp": "2026-01-19T07:36:32.170104Z",
+    "metadata": {
+      "city": "Mumbai",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "09bd1ba6-02f3-4db4-9b79-85abaa713cfd",
+    "run_id": "6f12c28b",
+    "timestamp": "2026-01-19T07:36:32.225751Z",
+    "metadata": {
+      "city": "Nashik",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "3703f60c-d720-43d8-af72-7a2bd27cb565",
+    "run_id": "integration_test_12345",
+    "timestamp": "2026-01-19T07:36:32.250943Z",
+    "metadata": {
+      "city": "Nashik",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "12d1ddbb-7bc4-4cfa-b125-6ad6998d0fd2",
+    "run_id": "e34ad511",
+    "timestamp": "2026-01-19T07:36:32.304119Z",
+    "metadata": {
+      "city": "Mumbai",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "45e2bb56-5c5b-4d63-8b82-50446845b79e",
+    "run_id": "489505c5",
+    "timestamp": "2026-01-19T07:36:32.332130Z",
+    "metadata": {
+      "city": "Mumbai",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "273e1506-4bef-413f-a22e-988bdce9a85c",
+    "run_id": "db_storage_test_123",
+    "timestamp": "2026-01-19T07:36:32.365116Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "9c81bf9c-912d-4d37-a81d-0533aceb3c98",
+    "run_id": "rl_update_test_123",
+    "timestamp": "2026-01-19T07:36:32.422001Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "cf18efdb-fdea-4b94-a3c0-f0cefc5a8d43",
+    "run_id": "confidence_test_123",
+    "timestamp": "2026-01-19T07:36:32.478314Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "18ec71aa-5100-450e-9a45-67239265d666",
+    "run_id": "confidence_test_123",
+    "timestamp": "2026-01-19T07:36:32.515501Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "c9494cd8-e5d1-41ee-85b8-e4f1f78eb2aa",
+    "run_id": "confidence_test_123",
+    "timestamp": "2026-01-19T07:36:32.556761Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "76484d5d-9e9e-4367-996a-b578ca89b65b",
+    "run_id": "confidence_test_123",
+    "timestamp": "2026-01-19T07:36:32.611817Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": -1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "6ac53f3f-3f99-4fb7-93c9-4b8f4319a5db",
+    "run_id": "retrieval_test_123",
+    "timestamp": "2026-01-19T07:36:32.682046Z",
+    "metadata": {
+      "city": "Nashik",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "92675a2c-9d17-40cb-852d-9dfef299ffe9",
+    "run_id": "multiple_fb_test_123",
+    "timestamp": "2026-01-19T07:36:32.758741Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "dc7171e0-a0e4-4de1-ac04-0be9e6187ecf",
+    "run_id": "multiple_fb_test_123",
+    "timestamp": "2026-01-19T07:36:32.811391Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "a51f0acb-330a-4f1f-a77b-0f09a0198286",
+    "run_id": "multiple_fb_test_123",
+    "timestamp": "2026-01-19T07:36:32.874242Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": -1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "f12402b2-54fd-4afa-8419-237d60956b98",
+    "run_id": "multiple_fb_test_123",
+    "timestamp": "2026-01-19T07:36:32.938900Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "e71ec029-63be-4107-b623-c858cb8abc39",
+    "run_id": "no_output_test_123",
+    "timestamp": "2026-01-19T07:36:33.004043Z",
+    "metadata": {
+      "city": "Pune",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "ad8d3c2f-50f5-44c9-a1b4-6d7c437c4d49",
+    "run_id": "persistence_test_123",
+    "timestamp": "2026-01-19T07:36:33.068586Z",
+    "metadata": {
+      "city": "Ahmedabad",
+      "feedback": 1
+    }
+  },
+  {
+    "event_type": "compliance_check",
+    "trace_id": "27b405b5-5867-455c-a66c-5e76b03bd0e6",
+    "run_id": "85f652c9",
+    "timestamp": "2026-01-19T07:36:33.131740Z",
+    "metadata": {
+      "city": "Mumbai",
+      "status": "BLOCKED"
+    },
+    "performance": {
+      "duration_ms": null
+    }
+  },
+  {
+    "event_type": "feedback",
+    "trace_id": "21e7c804-fe41-42b0-b829-d924b35e54fc",
+    "run_id": "e2e_feedback_test",
+    "timestamp": "2026-01-19T07:36:33.166741Z",
+    "metadata": {
+      "city": "Mumbai",
+      "feedback": 1
+    }
+  }
+]

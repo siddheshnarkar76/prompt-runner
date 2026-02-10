@@ -1,0 +1,202 @@
+[
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.243176Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.253487Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.275166Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.305592Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.327982Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.361640Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.416651Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.439683Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.459057Z"
+  },
+  {
+    "status": "healthy",
+    "core_bridge": true,
+    "feedback_store": true,
+    "tests_passed": true,
+    "integration_ready": true,
+    "dependencies": {
+      "mongo": {
+        "status": "ok",
+        "latency_ms": 0.0,
+        "error": null
+      },
+      "noopur": {
+        "status": "disabled",
+        "latency_ms": null,
+        "error": "Optional dependency unavailable"
+      }
+    },
+    "timestamp": "2026-01-19T07:36:33.491068Z"
+  }
+]
