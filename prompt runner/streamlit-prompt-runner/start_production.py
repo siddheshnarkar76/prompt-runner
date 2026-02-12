@@ -27,29 +27,6 @@ def check_python_version():
     return True
 
 
-def check_mongodb():
-    """Verify MongoDB is accessible."""
-    print("\n📊 Checking MongoDB connection...")
-    
-    try:
-        from pymongo import MongoClient
-        from dotenv import load_dotenv
-        load_dotenv()
-        
-        mongo_uri = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
-        client = MongoClient(mongo_uri, serverSelectionTimeoutMS=5000)
-        client.admin.command("ping")
-        
-        print(f"✓ MongoDB connected at {mongo_uri}")
-        return True
-        
-    except Exception as e:
-        print(f"⚠️  MongoDB not available: {e}")
-        print("   Continuing with mock mode (USE_MOCK_MONGO=1)")
-        os.environ["USE_MOCK_MONGO"] = "1"
-        return True  # Continue with mock
-
-
 def check_dependencies():
     """Verify all required packages are installed."""
     print("\n📦 Checking dependencies...")
@@ -58,7 +35,6 @@ def check_dependencies():
         "fastapi",
         "uvicorn",
         "pydantic",
-        "pymongo",
         "requests",
         "pytest"
     ]
@@ -140,7 +116,6 @@ def run_quick_tests():
     
     result = subprocess.run(
         [sys.executable, "-m", "pytest", "tests/test_api_health.py", "-v", "--tb=short"],
-        env={**os.environ, "USE_MOCK_MONGO": "1"},
         capture_output=True,
         text=True
     )
@@ -164,8 +139,6 @@ def main():
     if not check_dependencies():
         print("\n❌ Startup aborted: missing dependencies")
         sys.exit(1)
-    
-    check_mongodb()
     
     # Start server
     server_process = start_fastapi_server()

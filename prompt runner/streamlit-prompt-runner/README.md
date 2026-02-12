@@ -1,17 +1,17 @@
 # Prompt Runner - Building Compliance & Design Validation Platform
 
-A production-ready platform for validating building designs against municipal compliance rules. Submit design prompts → receive compliance assessments and 3D geometry outputs.
+A production-ready FastAPI platform for validating building designs against municipal compliance rules. Submit design prompts → receive compliance assessments and 3D geometry outputs.
 
-**Tech Stack:** FastAPI + Streamlit + MongoDB Atlas + Python 3.11+
+**Tech Stack:** FastAPI + Python 3.11+ + JSON Storage
 
 ---
 
-## **Quick Start (5 minutes)**
+## **Quick Start (3 minutes)**
 
 ### **1. Clone & Setup**
 
 ```bash
-cd path/to/project
+cd "c:\Users\sid\Documents\prompt-main\prompt runner\streamlit-prompt-runner"
 python -m venv .venv
 .venv\Scripts\Activate.ps1  # Windows
 source .venv/bin/activate   # macOS/Linux
@@ -20,53 +20,21 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### **2. Configure MongoDB**
+### **2. Start FastAPI Server**
 
-Create `.env` file in project root with your MongoDB Atlas credentials:
-
-```
-USE_MOCK_MONGO=0
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=prompt-runner
-MONGO_DB=prompt_runner
-```
-
-**Get MongoDB credentials:**
-1. Go to [mongodb.com/cloud/atlas](https://mongodb.com/cloud/atlas)
-2. Create cluster → Database User → Get connection string
-3. **Important:** URL-encode special characters (e.g., `@` → `%40`)
-
-### **3. Start Services (3 terminals)**
-
-**Terminal 1 - API:**
+**Option 1 - Direct Start:**
 ```powershell
 uvicorn api.main:app --reload --host 127.0.0.1 --port 5001
 ```
 
-**Terminal 2 - Streamlit UI:**
+**Option 2 - Production Script:**
 ```powershell
-streamlit run main.py
-```
-
-**Terminal 3 - MCP Server (optional):**
-```powershell
-python mcp_server.py
+python start_production.py
 ```
 
 Then open:
-- **UI:** http://localhost:8501
-- **API:** http://127.0.0.1:5001
-
----
-
-## **Local Development (No MongoDB)**
-
-For testing without MongoDB Atlas:
-
-```powershell
-$env:USE_MOCK_MONGO = "1"  # Uses in-memory mongomock
-uvicorn api.main:app --reload --host 127.0.0.1 --port 5001
-streamlit run main.py
-```
+- **API Docs:** http://localhost:5001/docs
+- **Health Check:** http://localhost:5001/system/health
 
 ---
 
@@ -74,12 +42,6 @@ streamlit run main.py
 
 ```
 streamlit-prompt-runner/
-├── main.py                    # Streamlit UI entry point
-├── platform_adapter.py        # Production integration layer
-├── mcp_server.py              # MCP server entry point
-├── requirements.txt           # Dependencies (pinned versions)
-├── .env                       # Environment config (not committed)
-│
 ├── api/                       # FastAPI backend
 │   ├── main.py               # API entry point
 │   ├── orchestrator.py       # Compliance pipeline orchestration
@@ -93,11 +55,12 @@ streamlit-prompt-runner/
 │   ├── calculator_agent.py    # Calculation engine
 │   └── ...
 │
-├── components/               # Streamlit UI components
-│   ├── ui.py                # UI helpers (input, buttons, history)
-│   └── glb_viewer.py        # 3D geometry viewer
+├── mcp/                      # Data storage (JSON files)
+│   ├── db.py                 # JSON-based storage layer
+│   └── schemas.py            # Data schemas
 │
-├── mcp/                      # MongoDB & schemas
+├── data/                     # Data files & storage
+│   └── storage/              # JSON database files
 │   ├── db.py                # MongoDB connection (singleton)
 │   ├── schemas.py           # Request/response validation
 │   └── ...
